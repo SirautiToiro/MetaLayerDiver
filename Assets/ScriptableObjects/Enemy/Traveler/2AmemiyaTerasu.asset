@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e78c3892bfb56248ad660e18a03e089, type: 3}
+  m_Name: 2AmemiyaTerasu
+  m_EditorClassIdentifier: 
+  serialNum: 2
+  enemyName: "\u96E8\u5BAE\u7167"
+  hp: 23
+  picSprites:
+  - {fileID: 21300000, guid: 4a39c5f74c0972043862ae922b7a390e, type: 3}
+  actions1:
+  - actionsInTurn:
+    - enemyAction: 4
+      value: 5
+      UseState:
+        rid: -2
+    - enemyAction: 12
+      value: 5
+      UseState:
+        rid: 5081523189948874762
+  - actionsInTurn:
+    - enemyAction: 4
+      value: 8
+      UseState:
+        rid: -2
+    - enemyAction: 4
+      value: 8
+      UseState:
+        rid: -2
+  - actionsInTurn:
+    - enemyAction: 12
+      value: 15
+      UseState:
+        rid: 5081523189948874763
+  actions2: []
+  actions3: []
+  initialAction: []
+  enemyRoutine:
+    enemyRoutine: 0
+  enemyInitialEffects: []
+  gage: 0
+  tier:
+    tier: 2
+  spawn:
+    dungeonType: 0
+  uniqueTag:
+    uniqueTag: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 5081523189948874762
+      type: {class: StateBurn, ns: , asm: Assembly-CSharp}
+      data: 
+    - rid: 5081523189948874763
+      type: {class: StateBurn, ns: , asm: Assembly-CSharp}
+      data: 

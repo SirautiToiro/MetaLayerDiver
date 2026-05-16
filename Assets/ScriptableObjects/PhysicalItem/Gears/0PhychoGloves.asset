@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88b923325b1e81e4ab1fe91a50fb8f08, type: 3}
+  m_Name: 0PhychoGloves
+  m_EditorClassIdentifier: 
+  SerialNum: 0
+  ItemName: "\u30B5\u30A4\u30B3\u30AD\u7247\u624B\u888B"
+  IconSprite: {fileID: 21300000, guid: 8d6cee2f8ba460942b9be17f2e80220d, type: 3}
+  MiniIconSprite: {fileID: 0}
+  StackMax: 1
+  SizeX: 1
+  SizeY: 1
+  PhysicalItemType:
+    itemType: 1
+  Tier:
+    tier: 1
+  WeaponData: {fileID: 0}
+  ConsumablesData: {fileID: 0}
+  TreasuresOrDropsData: {fileID: 0}

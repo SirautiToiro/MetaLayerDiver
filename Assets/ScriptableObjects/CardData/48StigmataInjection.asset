@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f10ac18f61bbdc4f9dc5ae62ec114fd, type: 3}
+  m_Name: 48StigmataInjection
+  m_EditorClassIdentifier: 
+  serialNum: 48
+  cost: 2
+  cardName: "\u8056\u75D5\u6CE8\u5165"
+  iconSprite: {fileID: 21300000, guid: 6e0a4bf6e8185ea4098fbcc6a20428ba, type: 3}
+  effectList:
+  - Effect:
+      cardEffect: 0
+      value: 8
+    UseState:
+      rid: 2506268081825251330
+  - Effect:
+      cardEffect: 10
+      value: 3
+    UseState:
+      rid: 2506268081825251328
+  - Effect:
+      cardEffect: 0
+      value: 8
+    UseState:
+      rid: -2
+  - Effect:
+      cardEffect: 7
+      value: 2
+    UseState:
+      rid: 2506268081825251330
+  targetDefine:
+    effectTarget: 2
+  attributeList:
+  - attribute: 1
+  - attribute: 5
+  tagList: []
+  tier:
+    tier: 1
+  specialEffect:
+    specialEffect: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 2506268081825251328
+      type: {class: StatePlay, ns: , asm: Assembly-CSharp}
+      data: 
+    - rid: 2506268081825251330
+      type: {class: StateDefenseDown, ns: , asm: Assembly-CSharp}
+      data: 

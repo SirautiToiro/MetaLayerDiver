@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cdc67138c568324f835fe732d15c043, type: 3}
+  m_Name: PyroDeck
+  m_EditorClassIdentifier: 
+  deckName: "\u706B\u708E\u30C7\u30C3\u30AD"
+  cardList:
+  - {fileID: 11400000, guid: f56f2c62438ae37429d6a8be725160fa, type: 2}
+  - {fileID: 11400000, guid: f56f2c62438ae37429d6a8be725160fa, type: 2}
+  - {fileID: 11400000, guid: 76028ae69f793ef489ccc5c32b6336cc, type: 2}
+  - {fileID: 11400000, guid: 76028ae69f793ef489ccc5c32b6336cc, type: 2}
+  - {fileID: 11400000, guid: d1eeeff90fab004429bb5af39aac7a4b, type: 2}
+  - {fileID: 11400000, guid: d1eeeff90fab004429bb5af39aac7a4b, type: 2}
+  - {fileID: 11400000, guid: e2e2e4cb37ca7f5489bff9d1e7ef5e07, type: 2}
+  - {fileID: 11400000, guid: e2e2e4cb37ca7f5489bff9d1e7ef5e07, type: 2}
+  - {fileID: 11400000, guid: ada8524f71d22fa4c831308635835669, type: 2}
+  - {fileID: 11400000, guid: ada8524f71d22fa4c831308635835669, type: 2}
+  - {fileID: 11400000, guid: 5529a03983e373148b10f7db4cc94aa1, type: 2}
+  - {fileID: 11400000, guid: 5529a03983e373148b10f7db4cc94aa1, type: 2}
+  - {fileID: 11400000, guid: d3e265025121eac45aa402c3a69219e3, type: 2}
+  - {fileID: 11400000, guid: 0ab15cdffbbb03c4b8730df614977085, type: 2}
+  - {fileID: 11400000, guid: 79f6f2738899bec43b60a1dd0f5b4cbe, type: 2}
+  - {fileID: 11400000, guid: ac9f146c94729e447aef7a74a9b65dc2, type: 2}

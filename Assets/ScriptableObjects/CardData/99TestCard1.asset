@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f10ac18f61bbdc4f9dc5ae62ec114fd, type: 3}
+  m_Name: 99TestCard1
+  m_EditorClassIdentifier: 
+  serialNum: 99
+  cost: 0
+  cardName: "\u30C6\u30B9\u30C8\u30AB\u30FC\u30C91"
+  iconSprite: {fileID: 21300000, guid: 7dd16fd0b775ce1439082b54313cc7fd, type: 3}
+  effectList:
+  - Effect:
+      cardEffect: 0
+      value: 5
+    UseState:
+      rid: 2736626472255488000
+  targetDefine:
+    effectTarget: 1
+  attributeList:
+  - attribute: 6
+  tagList: []
+  tier:
+    tier: 2
+  specialEffect:
+    specialEffect: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 2736626472255488000
+      type: {class: StateAvoid, ns: , asm: Assembly-CSharp}
+      data: 

@@ -1,0 +1,119 @@
+#command　　　　　　　 | Dialogue command: {write dialogue async}                                                                               　　　　　　　　　　 | 
+#token  　　　　　　　 | Dialogue token code: {$standard}                                                                                       　　　　　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {マルチタスカー}.                                                                                                    　　　 | 
+        　　　　　　　 | Right:{false} inversion:{false}                                                                                        　　　　　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {信仰武者}.                                                                                                    　　　　　　 | 
+        　　　　　　　 | Right:{true} inversion:{true}                                                                                          　　　　　　　　　　 | 
+マルチタスカー         | ここが例の人の住処か。結構頑丈そうな家だ。                                                                                                    | 
+信仰武者        　　　 | とにかく、入ってみよう。話はそれからだ。                                                                                                   　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {信仰武者}.                                                                                                    　　　　　　 | 
+        　　　　　　　 | Right:{false} inversion:{false}                                                                                        　　　　　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {作図家}.                                                                                                    　　　　　　　 | 
+        　　　　　　　 | Right:{true} inversion:{true}                                                                                          　　　　　　　　　　 | 
+信仰武者        　　　 | ごめんくださーい。家の主はおられますかー？                                                                                                    | 
+作図家        　　　　 | そんな大声を出さなくても聞こえてるよ。何？　依頼ならそこのポストに入れてくれって言ってるのに。                                       　　　　　　　 | 
+信仰武者        　　　 | それは失敬。だが今日は違うんだ。ちょっとおれたちの仲間になってほしいんだが。                                                           　　　　　 | 
+信仰武者        　　　 | ほら、これは手土産のビールだ。つまみもある。ちょっと話をしようじゃないか。                                                           　　　　　　 | 
+作図家        　　　　 | ビール？　うーん。ワインとかの方が好きだけどなぁ。ま、食べ物のほうは悪くなさそう。                                                           　　 | 
+作図家        　　　　 | バーマスターのところの料理でしょ？　最近あんまり行けてないな。じゃ、中に入って。                                                           　　　 | 
+作図家        　　　　 | 後ろの子も一緒？　男二人でこんなところにくるなんて、ご苦労さんだこと。                                                           　　　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {マルチタスカー}.                                                                                                    　　　 | 
+        　　　　　　　 | Right:{false} inversion:{false}                                                                                        　　　　　　　　　　 | 
+マルチタスカー         | マルチタスカーと呼んでくれ。最近この町に来た冒険者だ。                                                                               　　　　　 | 
+マルチタスカー         | こっちの暑苦しいのは、、、                                                                                                   　　　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {信仰武者}.                                                                                                    　　　　　　 | 
+        　　　　　　　 | Right:{false} inversion:{false}                                                                                        　　　　　　　　　　 | 
+信仰武者        　　　 | 信仰武者と呼ばれている。同じく冒険者だ。よろしくな。                                                                               　　　　　　 | 
+作図家        　　　　 | 冒険者なんて、奇矯な仕事だよ。この町にいる時点で、みんな同じかもしれないけど。                                                           　　　　 | 
+信仰武者        　　　 | そうつんけんするなよ。何、結構いい部屋だな。                                                                               　　　　　　　　　　 | 
+作図家        　　　　 | 全部私が作った。良いでしょ。お気に入りは全部自分のところに残している。                                                           　　　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {マルチタスカー}.                                                                                                    　　　 | 
+        　　　　　　　 | Right:{false} inversion:{false}                                                                                        　　　　　　　　　　 | 
+マルチタスカー         | これはすごい。外の世界ならひと財産稼げるぜ。ワイン飲み放題だ。                                                                               　 | 
+作図家        　　　　 | 一年ご飯を食べる分のお金以上に稼ぐのには興味ないから。だから、冒険者になって稼ごうって話はお断り。                                       　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {信仰武者}.                                                                                                    　　　　　　 | 
+        　　　　　　　 | Right:{false} inversion:{false}                                                                                        　　　　　　　　　　 | 
+信仰武者        　　　 | ぐぅ。ダメか。                                                                                                                       　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {マルチタスカー}.                                                                                                    　　　 | 
+        　　　　　　　 | Right:{false} inversion:{false}                                                                                        　　　　　　　　　　 | 
+マルチタスカー         | 仕方ない。次の作戦だ。ほら、何かあるんだろう？                                                                               　　　　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {信仰武者}.                                                                                                    　　　　　　 | 
+        　　　　　　　 | Right:{false} inversion:{false}                                                                                        　　　　　　　　　　 | 
+信仰武者        　　　 | そんなものはない。稼ごうって話だけで終わりだ。                                                                               　　　　　　　　　 | 
+        　　　　　　　 | ほら、もっと稼げばいいワインが買えるぞ。どうだ？                                                                               　　　　　　　　　 | 
+作図家        　　　　 | 別に。家具を売ったお金で十分買えるし。                                                                                                   　　 | 
+信仰武者        　　　 | ぐぅ。                                                                                                                       　　　　　　　 | 
+作図家        　　　　 | お帰りはあちらだけど。。。一応、お酒飲む？                                                                                                    | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {マルチタスカー}.                                                                                                    　　　 | 
+        　　　　　　　 | Right:{false} inversion:{false}                                                                                        　　　　　　　　　　 | 
+マルチタスカー         | 僕はリンゴジュースで。                                                                                                   　　　　　　　　　　 | 
+null    　　　　　　　 | ・・・・・・                                                                                                                       　　　　 | 
+null    　　　　　　　 | ・・・・・・                                                                                                                       　　　　 | 
+        　　　　　　　 | ・・・・・・                                                                                                                       　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {信仰武者}.                                                                                                    　　　　　　 | 
+        　　　　　　　 | Right:{false} inversion:{false}                                                                                        　　　　　　　　　　 | 
+信仰武者        　　　 | (ビールを飲んでいる)                                                                                                                     　 | 
+作図家        　　　　 | (棚からワインを出して飲み始めた)                                                                                                 　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {マルチタスカー}.                                                                                                    　　　 | 
+        　　　　　　　 | Right:{false} inversion:{false}                                                                                        　　　　　　　　　　 | 
+マルチタスカー         | (机の木目を見ている)                                                                                                                     　 | 
+作図家        　　　　 | それで、二人は何で冒険者をしているのさ。命の危険もあるのに。                                                                               　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {信仰武者}.                                                                                                    　　　　　　 | 
+        　　　　　　　 | Right:{false} inversion:{false}                                                                                        　　　　　　　　　　 | 
+信仰武者        　　　 | うーん。気づいたらそうなっちまってたな。金ももらえるし、面白い体験もできる。悪くない仕事だと思うね。                                       　　　　 | 
+信仰武者        　　　 | 金を手に入れて友達集めて、湖の近くに家を建てて住みたいんだ。                                                                               　　 | 
+        　　　　　　　 | それで面白おかしく死ぬまで暮らせたら最高じゃないか？                                                                               　　　　　　 | 
+作図家        　　　　 | 友達って必要？                                                                                                                       　　　 | 
+信仰武者        　　　 | もちろんだ。俺は、あんたと話すのも結構好きだぜ。                                                                               　　　　　　　　 | 
+        　　　　　　　 | 人がいるほど楽しくなる。誰かと冒険するのはワクワクする。                                                                               　　　　 | 
+作図家        　　　　 | そうなんだ。(考えるしぐさ)                                                                                                 　　　　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {マルチタスカー}.                                                                                                    　　　 | 
+        　　　　　　　 | Right:{false} inversion:{false}                                                                                        　　　　　　　　　　 | 
+マルチタスカー         | 僕は、ダンジョンに眠っている「世界の真実」を探している。                                                                               　　　　 | 
+マルチタスカー         | この町の近くにある３つのダンジョン。その中には世界を運営する根幹になるものが隠されているはずだ。                                       　　　　　　 | 
+作図家        　　　　 | ふーん？　そういえばダンジョンがなんで存在するか、気にしたこともなかった。                                                           　　　　　　 | 
+マルチタスカー         | 石を投げたら下に落ちるだろ？　それと同じで俺たちも当たり前のように生まれて、なぜだか嬉しかったり悲しかったりするわけだ。                   　　　　　 | 
+マルチタスカー         | その理由が、全部ダンジョンに隠されていると俺は考えている。                                                                               　　　 | 
+作図家        　　　　 | 家がなんで倒れないのかとか、船がなんで浮かぶのかとかも？                                                                               　　　　 | 
+マルチタスカー         | もちろんだ。俺たちはそれを物理法則として知っている。でも、それ以上の追及は諦めている。                                                            | 
+マルチタスカー         | ダンジョンにあるのはその『大元』だ。全ての理由がそこにあるはずだ。                                                           　　　　　　　　　　 | 
+作図家        　　　　 | そこには私でも行ける？                                                                                                   　　　　　　　　　　 | 
+マルチタスカー         | 行けるさ。作図家さんは戦っても強そうだ。ダンジョンをたった一層潜ればいい。                                                           　　　　　　 | 
+作図家        　　　　 | ふーん。それは興味あるかも。                                                                                                   　　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {信仰武者}.                                                                                                    　　　　　　 | 
+        　　　　　　　 | Right:{false} inversion:{false}                                                                                        　　　　　　　　　　 | 
+信仰武者        　　　 | その一層を進むのが難しいんだけどな。                                                                                                   　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {マルチタスカー}.                                                                                                    　　　 | 
+        　　　　　　　 | Right:{false} inversion:{false}                                                                                        　　　　　　　　　　 | 
+マルチタスカー         | しっ！　静かに！                                                                                                                       　　 | 
+作図家        　　　　 | ダンジョン、私も行ってみようかな。面白そうだし。                                                                               　　　　　　　　 | 
+マルチタスカー         | よっしゃ！                                                                                                                       　　　　　 | 
+作図家        　　　　 | そうと決まれば、もっとダンジョンに近いところに拠点を作ろうかな。                                                                                | 
+        　　　　　　　 | 家とか、小屋？　畑とかも欲しいかも。うーん、どうしようかな。                                                                               　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {信仰武者}.                                                                                                    　　　　　　 | 
+        　　　　　　　 | Right:{false} inversion:{false}                                                                                        　　　　　　　　　　 | 
+信仰武者        　　　 | なんだか成功したみたいだ。                                                                                                   　　　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {マルチタスカー}.                                                                                                    　　　 | 
+        　　　　　　　 | Right:{false} inversion:{false}                                                                                        　　　　　　　　　　 | 
+マルチタスカー         | 話はしてみるもんだ。                                                                                                                        | 
+作図家        　　　　 | そうと決まれば土地を下見に行かなくちゃ！　ほら、ついてきて！                                                                               　　 | 
+        　　　　　　　 | 重いのこぎりとかを運んでほしいし、建築は男の仕事だから！                                                                                                                       　　　　　　　　　　 | 

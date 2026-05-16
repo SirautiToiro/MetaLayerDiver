@@ -1,0 +1,43 @@
+#command　　　　　　　 | Dialogue command: {write dialogue async}                                                                               　　　　　　　　　　 | 
+#token  　　　　　　　 | Dialogue token code: {$standard}                                                                                       　　　　　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {マルチタスカー}.                                                                                                    　　　 | 
+        　　　　　　　 | Right:{false} inversion:{false}                                                                                        　　　　　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {信仰武者}.                                                                                                    　　　　　　 | 
+        　　　　　　　 | Right:{true} inversion:{true}                                                                                          　　　　　　　　　　 | 
+マルチタスカー         | さあ、帰ってきたぞ。                                                                                                                        | 
+信仰武者        　　　 | 傷だらけだな。だが、戦利品もあったようじゃないか。                                                                               　　　　　　　 | 
+マルチタスカー         | 骸骨がいたぞ。動くスケルトン。あいつらは何だ？                                                                               　　　　　　　　　 | 
+信仰武者        　　　 | わからん。古城ダンジョンの奥にある『世界の真実』の影響だろう。                                                                               　 | 
+        　　　　　　　 | 噂では、命の仕組みに関するものだとか。                                                                                                   　　 | 
+マルチタスカー         | 興味深い限りだ。倒すことはできるみたいだな。ボスもあんな感じなのか？                                                           　　　　　　　　　 | 
+信仰武者        　　　 | 二層の番人に関しては、その姿を見て生き残ったやつはいない。                                                                               　　　 | 
+信仰武者        　　　 | だが、一層にも強力な敵がいるそうだ。そいつは骸骨の戦士だったらしいぜ。                                                           　　　　　　　　 | 
+マルチタスカー         | なるほどね。疲れたから、何か食べようかな。                                                                                                    | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {共鳴弦}.                                                                                                    　　　　　　　 | 
+        　　　　　　　 | Right:{true} inversion:{true}                                                                                          　　　　　　　　　　 | 
+共鳴弦        　　　　 | 注文？　何がいいの？                                                                                                                        | 
+マルチタスカー         | 肉なら何でもいい。あと、水をくれ。                                                                                                   　　　　 | 
+共鳴弦        　　　　 | じゃあ、スペアリブね。この店のおすすめよ。ぶどうジュースを奢ってあげる。生きてダンジョンから帰れるだけで上級者よ。                   　　　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {信仰武者}.                                                                                                    　　　　　　 | 
+        　　　　　　　 | Right:{false} inversion:{false}                                                                                        　　　　　　　　　　 | 
+信仰武者        　　　 | 俺はビールだ。あと、、、                                                                                                   　　　　　　　　　 | 
+共鳴弦        　　　　 | 焼きそばと唐揚げでいい？　いつもそれ頼むでしょ。                                                                               　　　　　　　　 | 
+信仰武者        　　　 | ああ。それでよろしく。                                                                                                   　　　　　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {マルチタスカー}.                                                                                                    　　　 | 
+        　　　　　　　 | Right:{false} inversion:{false}                                                                                        　　　　　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {信仰武者}.                                                                                                    　　　　　　 | 
+        　　　　　　　 | Right:{true} inversion:{true}                                                                                        　　　　　　　　　　 | 
+信仰武者        　　　 | さて。ダンジョンから帰ってきたお前は一度休む必要がある。                                                                               　　　　 | 
+        　　　　　　　 | 疲れた状態で無理をしてけがをされてはたまらんからな。                                                                               　　　　　　 | 
+信仰武者        　　　 | その間は、俺が冒険することにする。                                                                                                   　　　　 | 
+        　　　　　　　 | 俺がダンジョンに言っている間、俺の荷物を見張っていてくれ。                                                                               　　　 | 
+マルチタスカー         | なんだと？　僕はまだやれるぞ。                                                                                                   　　　　　　 | 
+信仰武者        　　　 | 交互に出撃することで安全性が高まるんだ。チームで動くっていうのはこういうことだ。                                                           　　　 | 
+        　　　　　　　 | 見つけたアイテムも、俺たちで共有することとしよう。                                                                               　　　　　　　 | 
+マルチタスカー         | わかったよ。                                                                                                                       　　　　 | 

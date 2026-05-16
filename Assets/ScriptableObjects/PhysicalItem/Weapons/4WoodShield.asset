@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88b923325b1e81e4ab1fe91a50fb8f08, type: 3}
+  m_Name: 4WoodShield
+  m_EditorClassIdentifier: 
+  SerialNum: 4
+  ItemName: "\u6728\u306E\u76FE"
+  IconSprite: {fileID: 21300000, guid: bd487aa793c0b364cb6709e9247d3785, type: 3}
+  MiniIconSprite: {fileID: 0}
+  StackMax: 1
+  SizeX: 1
+  SizeY: 1
+  PhysicalItemType:
+    itemType: 0
+  Tier:
+    tier: 0
+  WeaponData: {fileID: 11400000, guid: 9871f6b536de9844fbbb857263b12706, type: 2}
+  ConsumablesData: {fileID: 0}
+  TreasuresOrDropsData: {fileID: 0}
+  GearData: {fileID: 0}

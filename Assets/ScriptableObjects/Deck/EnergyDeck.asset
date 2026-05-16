@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cdc67138c568324f835fe732d15c043, type: 3}
+  m_Name: EnergyDeck
+  m_EditorClassIdentifier: 
+  deckName: "\u30A8\u30CD\u30EB\u30AE\u30FC\u30C7\u30C3\u30AD"
+  cardList:
+  - {fileID: 11400000, guid: 07e8426d1d9f52b46b335be7ab7501fd, type: 2}
+  - {fileID: 11400000, guid: 07e8426d1d9f52b46b335be7ab7501fd, type: 2}
+  - {fileID: 11400000, guid: 394bdb3c06691164f82537d6031cc05a, type: 2}
+  - {fileID: 11400000, guid: 394bdb3c06691164f82537d6031cc05a, type: 2}
+  - {fileID: 11400000, guid: ed42fce2edd4dc44e9ba2e122485851b, type: 2}
+  - {fileID: 11400000, guid: ed42fce2edd4dc44e9ba2e122485851b, type: 2}
+  - {fileID: 11400000, guid: 5529a03983e373148b10f7db4cc94aa1, type: 2}
+  - {fileID: 11400000, guid: 5529a03983e373148b10f7db4cc94aa1, type: 2}
+  - {fileID: 11400000, guid: 7b1ac5d3edf1c0942a770118716a933c, type: 2}
+  - {fileID: 11400000, guid: 7b1ac5d3edf1c0942a770118716a933c, type: 2}
+  - {fileID: 11400000, guid: f31d22ef066551c4190a8e7a49de5ed6, type: 2}
+  - {fileID: 11400000, guid: 77cd6dce78873a043b8c523defbcacad, type: 2}
+  - {fileID: 11400000, guid: 77cd6dce78873a043b8c523defbcacad, type: 2}
+  - {fileID: 11400000, guid: 6dddd5f76ca77fe4bb5807eda753e7ad, type: 2}
+  - {fileID: 11400000, guid: 6dddd5f76ca77fe4bb5807eda753e7ad, type: 2}
+  - {fileID: 11400000, guid: 7a74c9422866c1e4a95057b024815f9a, type: 2}

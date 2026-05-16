@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f10ac18f61bbdc4f9dc5ae62ec114fd, type: 3}
+  m_Name: 14GodHand
+  m_EditorClassIdentifier: 
+  serialNum: 14
+  cost: 1
+  cardName: "\u30B4\u30C3\u30C9\u30CF\u30F3\u30C9"
+  iconSprite: {fileID: 21300000, guid: f1e3678b35c1e5d4dbd754da8864068a, type: 3}
+  effectList:
+  - Effect:
+      cardEffect: 1
+      value: 4
+    UseState:
+      rid: -2
+  - Effect:
+      cardEffect: 10
+      value: 1
+    UseState:
+      rid: 3021251524613636099
+  - Effect:
+      cardEffect: 1
+      value: 4
+    UseState:
+      rid: -2
+  targetDefine:
+    effectTarget: 1
+  attributeList:
+  - attribute: 1
+  tagList: []
+  tier:
+    tier: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 3021251524613636099
+      type: {class: StatePlay, ns: , asm: Assembly-CSharp}
+      data: 

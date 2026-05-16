@@ -1,0 +1,55 @@
+#command　　　　　　　 | Dialogue command: {write dialogue async}                                                                               　　　　　　　　　　 | 
+#token  　　　　　　　 | Dialogue token code: {$standard}                                                                                       　　　　　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {マルチタスカー}.                                                                                                    　　　 | 
+        　　　　　　　 | Right:{false} inversion:{false}                                                                                        　　　　　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {信仰武者}.                                                                                                    　　　　　　 | 
+        　　　　　　　 | Right:{true} inversion:{true}                                                                                          　　　　　　　　　　 | 
+マルチタスカー         | お酒、持ってきたよ                                                                                                                       　 | 
+信仰武者        　　　 | ああ、ありがとう。ダンジョンを冒険するだけじゃつまらんから、たまには酒を飲まないとな。                                                            | 
+マルチタスカー         | 今日は僕もちょっと飲むよ。明日は休みにしよう。                                                                               　　　　　　　　　 | 
+信仰武者        　　　 | おお、いいじゃないか。共鳴弦ちゃん、焼き鳥とたこわさ、あと枝豆と、それから、、、                                                           　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {共鳴弦}.                                                                                                    　　　　　　　 | 
+        　　　　　　　 | Right:{true} inversion:{true}                                                                                          　　　　　　　　　　 | 
+共鳴弦        　　　　 | はいはーい。                                                                                                                       　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {信仰武者}.                                                                                                    　　　　　　 | 
+        　　　　　　　 | Right:{true} inversion:{true}                                                                                          　　　　　　　　　　 | 
+マルチタスカー         | 酒を飲んでるのはいつものことだけど、僕を誘わずに一人で飲めばいいのに。                                                           　　　　　　　　 | 
+マルチタスカー         | あっ、共鳴弦ちゃん、バーマスターに何かカクテルを頼んでくれないかな。                                                           　　　　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {共鳴弦}.                                                                                                    　　　　　　　 | 
+        　　　　　　　 | Right:{true} inversion:{true}                                                                                          　　　　　　　　　　 | 
+共鳴弦        　　　　 | はいよー。カクテル一つね！　お任せで！                                                                                                   　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {信仰武者}.                                                                                                    　　　　　　 | 
+        　　　　　　　 | Right:{true} inversion:{true}                                                                                          　　　　　　　　　　 | 
+信仰武者        　　　 | さては、酒を飲んだことないな、お前                                                                                                   　　　　 | 
+マルチタスカー         | 飲んだことはあるよ。成人済みだ。                                                                                                   　　　　　 | 
+信仰武者        　　　 | 飲み会の最初ってのはまずはビールを喉に流し込むんだよ。話はそれからだろうが。                                                           　　　　　 | 
+マルチタスカー         | もう、酔ってる？                                                                                                                       　　 | 
+信仰武者        　　　 | 俺は酔拳使いなんだ。酔うところからがスタートさ。                                                                               　　　　　　　　 | 
+マルチタスカー         | はいはい。                                                                                                                       　　　　　 | 
+信仰武者        　　　 | いや、さっきのは嘘。俺は信仰を力に変えるファイターだ。宗教の力を拳に込めて、敵を殴るんだ。                                       　　　　　　　　　 | 
+マルチタスカー         | 信仰？                                                                                                                       　　　　　　　 | 
+信仰武者        　　　 | ああ、そうだ。俺の宗教はこぶし、それ自体を信仰している。手を握りこんだ形そのものが祈りの形なんだ。                                       　　　　　 | 
+マルチタスカー         | ふーん。宗教って楽しい？                                                                                                   　　　　　　　　　 | 
+信仰武者        　　　 | 楽しいも何もあるものか。生き様ってだけだ。教義の制約も大きくてな。たとえば誰かと一緒でなければ酒が飲めないってこともある。                   　　　　 | 
+信仰武者        　　　 | 本当は清貧な宗派なんだ。おれはちょっと、乱暴だが。                                                                               　　　　　　　 | 
+マルチタスカー         | あ、料理が届いたぜ。                                                                                                                        | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {共鳴弦}.                                                                                                    　　　　　　　 | 
+        　　　　　　　 | Right:{true} inversion:{true}                                                                                          　　　　　　　　　　 | 
+共鳴弦        　　　　 | はーい。ご注文の料理ですよ！  テーブルに並べていくからね。                                                                             　　　　 | 
+共鳴弦        　　　　 | 君へのカクテルは、えっと、ライムを、えーと、ライムを何かしたやつ！　よろしく！                                                           　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {信仰武者}.                                                                                                    　　　　　　 | 
+        　　　　　　　 | Right:{true} inversion:{true}                                                                                          　　　　　　　　　　 | 
+信仰武者        　　　 | 彼女は未成年だったな。確か。                                                                                                   　　　　　　　 | 
+マルチタスカー         | お酒は飲めないと思う。素人の仲間がいてありがたい限りだ。                                                                               　　　　 | 
+信仰武者        　　　 | ここだけの話、この酒場の主人であるバーマスターも俺と同じ宗教なんだ。                                                           　　　　　　　　　 | 
+信仰武者        　　　 | 本当は、ちょっと宗派が違うけどな。彼女は手を繋ぐ握手の形を神聖視している。和を重んじる宗派だ。                                       　　　　　　　 | 
+マルチタスカー         | なるほどね。                                                                                                                       　　　　 | 
+信仰武者        　　　 | そのうち、もっと信仰について教えてやるよ。                                                                                                                       　　　　　　　　　　 | 

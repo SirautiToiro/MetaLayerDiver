@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88b923325b1e81e4ab1fe91a50fb8f08, type: 3}
+  m_Name: 2BrokenHandle
+  m_EditorClassIdentifier: 
+  SerialNum: 2
+  ItemName: "\u6298\u308C\u305F\u67C4"
+  IconSprite: {fileID: 21300000, guid: 8a4f44fee86483346bb1ae0663106219, type: 3}
+  MiniIconSprite: {fileID: 0}
+  StackMax: 3
+  SizeX: 1
+  SizeY: 1
+  PhysicalItemType:
+    itemType: 4
+  Tier:
+    tier: 0
+  WeaponData: {fileID: 0}
+  ConsumablesData: {fileID: 0}
+  TreasuresOrDropsData: {fileID: 11400000, guid: 62f78402f1dd5d7418f49158d169f407, type: 2}

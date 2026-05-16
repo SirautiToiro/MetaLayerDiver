@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88b923325b1e81e4ab1fe91a50fb8f08, type: 3}
+  m_Name: 3RemainedFire
+  m_EditorClassIdentifier: 
+  SerialNum: 3
+  ItemName: "\u6B8B\u308A\u706B"
+  IconSprite: {fileID: 21300000, guid: 248ab7b60a3e1f543b9bb2057a101369, type: 3}
+  MiniIconSprite: {fileID: 0}
+  StackMax: 3
+  SizeX: 1
+  SizeY: 1
+  PhysicalItemType:
+    itemType: 4
+  Tier:
+    tier: 1
+  WeaponData: {fileID: 0}
+  ConsumablesData: {fileID: 0}
+  TreasuresOrDropsData: {fileID: 11400000, guid: 0de6163f46f1acd42815c39d12f68211, type: 2}

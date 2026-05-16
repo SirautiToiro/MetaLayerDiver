@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cdc67138c568324f835fe732d15c043, type: 3}
+  m_Name: FaithDeck
+  m_EditorClassIdentifier: 
+  deckName: "\u4FE1\u4EF0\u30C7\u30C3\u30AD"
+  cardList:
+  - {fileID: 11400000, guid: a80850e3bf1f7ee43b113188f7234bfd, type: 2}
+  - {fileID: 11400000, guid: a80850e3bf1f7ee43b113188f7234bfd, type: 2}
+  - {fileID: 11400000, guid: 67cb19926c3adb44d8e589e55c579ae8, type: 2}
+  - {fileID: 11400000, guid: 67cb19926c3adb44d8e589e55c579ae8, type: 2}
+  - {fileID: 11400000, guid: c63f8812ef4ebd441925a5f64548a444, type: 2}
+  - {fileID: 11400000, guid: c63f8812ef4ebd441925a5f64548a444, type: 2}
+  - {fileID: 11400000, guid: 0308458c58b260b4fa7c568509cea011, type: 2}
+  - {fileID: 11400000, guid: 0308458c58b260b4fa7c568509cea011, type: 2}
+  - {fileID: 11400000, guid: 6bbd1953ccbcf654fa38a157f7da8678, type: 2}
+  - {fileID: 11400000, guid: 6bbd1953ccbcf654fa38a157f7da8678, type: 2}
+  - {fileID: 11400000, guid: 69853402fa6594d4188c8a6b8217e814, type: 2}
+  - {fileID: 11400000, guid: 69853402fa6594d4188c8a6b8217e814, type: 2}
+  - {fileID: 11400000, guid: 7e173fd875532c64a87b7a777ed7717f, type: 2}
+  - {fileID: 11400000, guid: 7e173fd875532c64a87b7a777ed7717f, type: 2}
+  - {fileID: 11400000, guid: f2751fc92d112c64791e931347d26b50, type: 2}
+  - {fileID: 11400000, guid: f2751fc92d112c64791e931347d26b50, type: 2}

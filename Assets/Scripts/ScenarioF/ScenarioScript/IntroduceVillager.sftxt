@@ -1,0 +1,100 @@
+#command　　　　　　　 | Dialogue command: {write dialogue async}                                                                               　　　　　　　　　　 | 
+#token  　　　　　　　 | Dialogue token code: {$standard}                                                                                       　　　　　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {マルチタスカー}.                                                                                                    　　　 | 
+        　　　　　　　 | Right:{false} inversion:{false}                                                                                        　　　　　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {信仰武者}.                                                                                                    　　　　　　 | 
+        　　　　　　　 | Right:{true} inversion:{true}                                                                                          　　　　　　　　　　 | 
+信仰武者        　　　 | お前も、ダンジョンから帰ってきたことだし、一人前といったところだな。                                                           　　　　　　　　　 | 
+        　　　　　　　 | そのうち馴染んでくると思うが、一度皆に紹介しておこう。                                                                               　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {カード商}.                                                                                                    　　　　　　 | 
+        　　　　　　　 | Right:{false} inversion:{false}                                                                                        　　　　　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {ピエロさん}.                                                                                                    　　　　　 | 
+        　　　　　　　 | Right:{true} inversion:{true}                                                                                          　　　　　　　　　　 | 
+信仰武者        　　　 | カード商とピエロさん、あとは、                                                                                                   　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {天秤屋}.                                                                                                    　　　　　　　 | 
+        　　　　　　　 | Right:{false} inversion:{false}                                                                                        　　　　　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {null}.                                                                                                　　　　　　　　　　 | 
+        　　　　　　　 | Right:{true} inversion:{true}                                                                                          　　　　　　　　　　 | 
+信仰武者        　　　 | 天秤屋さんかな。                                                                                                                       　　 | 
+信仰武者        　　　 | 全員それなりの年でね、冒険者を引退して今は店をやっているそうだ。                                                                                | 
+        　　　　　　　 | あのバーマスターも引退組だね。                                                                                                   　　　　　　 | 
+信仰武者        　　　 | それぞれ順番に連れていってやろう。                                                                                                   　　　　 | 
+信仰武者        　　　 | 最初は、カード商から。                                                                                                                       　　　　　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {カード商}.                                                                                                    　　　　　　 | 
+        　　　　　　　 | Right:{true} inversion:{false}                                                                                         　　　　　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {マルチタスカー}.                                                                                                    　　　 | 
+        　　　　　　　 | Right:{false} inversion:{false}                                                                                        　　　　　　　　　　 | 
+カード商        　　　 | おお、君が信仰武者のところに来たっていう坊主だね。バーマスターから聞いているよ。                                                           　　　 | 
+マルチタスカー         | ど、どうも。                                                                                                                       　　　　 | 
+カード商        　　　 | そう、緊張することはない。年を取っているだけのおいぼれだよ。                                                                               　　 | 
+        　　　　　　　 | 年上が偉いってんならこの世で一番偉いものは樹木とかになっちまうわな。                                                           　　　　　　　　　 | 
+カード商        　　　 | ハハハ！                                                                                                                       　　　　　　 | 
+マルチタスカー         | (面倒そうな人だ)                                                                                                                     　　　 | 
+カード商        　　　 | 私のことは『カード商』と呼んでくれ。昔は色々名乗っていたが、この年になると新しく考えるのも億劫でね。                                       　　　　 | 
+カード商        　　　 | 今は、単に『カード商』で通している。名前の通り、他の皆が要らなくなったカードを売っているんだ。                                       　　　　　　　 | 
+カード商        　　　 | 日替わりで商品が変わる。安くしている物もあるから、時々見に来てくれ。                                                           　　　　　　　　　 | 
+マルチタスカー         | ああ。よろしく。                                                                                                                       　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {ピエロさん}.                                                                                                    　　　　　 | 
+        　　　　　　　 | Right:{true} inversion:{false}                                                                                         　　　　　　　　　　 | 
+信仰武者        　　　 | 次は、ピエロさん。この村一番の変人だけど、実力は確かだ。                                                                               　　　　 | 
+マルチタスカー         | こんにちは。ピエロさんと呼べば？                                                                                                   　　　　　 | 
+ピエロさん        　　 | おお、坊や！　私のところの新しい客だね！　素敵なマジックショーをお見せしよう！                                                           　　　　 | 
+ピエロさん        　　 | ほら、この赤い球をごらん。手をかざすと、ほれ、消えてしまう。耳から出てきたねぇ。じゃあ、次は君のポケットの中を見てごらん！                   　　　　 | 
+マルチタスカー         | なに？！　カードがある。                                                                                                   　　　　　　　　　 | 
+ピエロさん        　　 | それは私からの親愛の証だよ。君がまた私のところに来るようにって魔法をかけたカードだ。                                                           　 | 
+マルチタスカー         | わかった。けど、ここでは何をしてくれるんだ？                                                                               　　　　　　　　　　 | 
+ピエロさん        　　 | 何って、ただマジックを見せるだけだよ。君が何か一つ、カードを用意してくれるなら、それを使ってマジックをするんだ。                   　　　　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {信仰武者}.                                                                                                    　　　　　　 | 
+        　　　　　　　 | Right:{true} inversion:{true}                                                                                          　　　　　　　　　　 | 
+信仰武者        　　　 | この人は、なんとカードを増やせるんだ。どうやっているのかは知らないが。とにかく、マジックが終わるとそのカードが二枚に増えている。                   　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {ピエロさん}.                                                                                                    　　　　　 | 
+        　　　　　　　 | Right:{true} inversion:{false}                                                                                         　　　　　　　　　　 | 
+ピエロさん        　　 | そうとも言うねぇ。でも、楽しむ気持ちを忘れちゃだめだ。いつまでも子供でいるべきさ。                                                           　　 | 
+マルチタスカー         | もちろんだ。ありがとう、ピエロさん。また来るよ。                                                                               　　　　　　　　 | 
+ピエロさん。        　 | また来るんだよ。                                                                                                                       　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {信仰武者}.                                                                                                    　　　　　　 | 
+        　　　　　　　 | Right:{true} inversion:{true}                                                                                          　　　　　　　　　　 | 
+信仰武者        　　　 | 最後は天秤屋だな。彼女は単純明快。余ったカードやアイテムを買い取ってくれるんだ。                                                           　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {天秤屋}.                                                                                                    　　　　　　　 | 
+        　　　　　　　 | Right:{true} inversion:{true}                                                                                          　　　　　　　　　　 | 
+天秤屋        　　　　 | 天秤屋の買い取りサービスぅ。余ったカードはないかねぇ。                                                                               　　　　　 | 
+天秤屋        　　　　 | 買い取り買い取りぃ。                                                                                                                        | 
+マルチタスカー         | あの、カードを買ってくれるのか？                                                                                                   　　　　　 | 
+天秤屋        　　　　 | 買い取るよぉ。金が欲しいか富が欲しいか。全部天秤屋にお任せさぁ。                                                                                | 
+天秤屋        　　　　 | 買い取り買い取りぃ。                                                                                                                        | 
+天秤屋        　　　　 | (天秤を揺らしながら歌っている)                                                                                                 　　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {信仰武者}.                                                                                                    　　　　　　 | 
+        　　　　　　　 | Right:{true} inversion:{true}                                                                                          　　　　　　　　　　 | 
+信仰武者        　　　 | どうも少しボケが入ってきたみたいなんだ。勘定を間違えることはないから大丈夫だ。                                                           　　　　 | 
+マルチタスカー         | あ、ああ。                                                                                                                       　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {天秤屋}.                                                                                                    　　　　　　　 | 
+        　　　　　　　 | Right:{true} inversion:{true}                                                                                          　　　　　　　　　　 | 
+天秤屋        　　　　 | 天秤屋の買い取りサービスぅ。                                                                                                   　　　　　　　 | 
+マルチタスカー         | ・・・・・・                                                                                                                       　　　　 | 
+$sync   　　　　　　　 | change character image                                                                                                 　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {信仰武者}.                                                                                                    　　　　　　 | 
+        　　　　　　　 | Right:{true} inversion:{true}                                                                                          　　　　　　　　　　 | 
+信仰武者        　　　 | どうだ？皆に会った感想は？                                                                                                   　　　　　　　　 | 
+マルチタスカー         | 個性的な人たちだった。この村は皆、こんなのばかりか？                                                                               　　　　　　 | 
+信仰武者        　　　 | そうだ。昔は冒険者だった人が多いからな。世界の真実ははるか昔からこの土地にある。それを中心としてできた村なんだ。                   　　　　　　　　　 | 
+信仰武者        　　　 | ダンジョンから出るカードは力を与えるが、俺が思うに、それを使いこなせるかは本人の力量による。                                       　　　　　　　　 | 
+信仰武者        　　　 | 本人の力。言い換えるなら、精神性の特殊さだ。どこかしら特別な人間が、冒険者になっていくのさ。                                       　　　　　　　　 | 
+マルチタスカー         | (僕もそうだ。自分を特別だと思っている。誰しもが特別だ。だが、特別であること自体は特別でない)                                     　　　　　　　　　 | 
+信仰武者        　　　 | さあ、酒場に行ってビールと枝豆を食べようじゃないか！　あそこの料理は一流だからな！                                                           　　 | 
+マルチタスカー         | 賛成だ！                                                                                                                       　　　　　　 | 
+マルチタスカー         | (そういえば、どうしてこんな山奥にビールと枝豆が？　普通ではありえないことだ)                                                         　　　　　　 | 

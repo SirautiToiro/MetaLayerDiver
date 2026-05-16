@@ -1,0 +1,42 @@
+Hello
+TalkInSincerity
+FirstQuest_initial
+TryEnterDungeon_initial
+***Branch*** InviteSakuzuka_initial
+IntroduceVillager
+***Branch*** SinkoMusya_Playing_initial
+
+-------------------------------------
+
+InviteSakuzuka_initial
+***Branch*** 一時クエスト　踊りの舞台
+***Branch*** MultiTasker_Training_initial
+一時クエスト　拠点建築Ⅰ
+一時クエスト　拠点建築Ⅱ
+一時クエスト　拠点建築Ⅲ
+
+--------------------------------------
+
+踊りの舞台
+
+演技指導　共鳴弦
+
+・舞台の完成　作図家
+
+・大盛況　バーマスター
+
+--------------------------------------
+MultiTasker_Training_initial
+
+一時クエスト　ひとにらみで恋して
+一時クエスト　蛇だって動けなくなる！
+一時クエスト　この朴念仁！
+
+--------------------------------------
+
+//酒を3つ買ってきてくれの依頼
+SinkoMusya_Playing_ending
+
+一時クエスト　鍛錬に付き合え
+一時クエスト　もっと筋肉を
+一時クエスト　天からの閃き

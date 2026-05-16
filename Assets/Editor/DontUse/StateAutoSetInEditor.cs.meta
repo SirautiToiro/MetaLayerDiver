@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: ba9c9ecefdd0b5b4e85f0a9c3c2ebe0b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_ViewDataDictionary: {instanceID: 0}
+  - _rootVisualTreeAsset: {fileID: 9197481963319205126, guid: 4caf1e88f21f7534ab6d481295f1f6ac, type: 3}
+  - _rootStyleSheet: {fileID: 7433441132597879392, guid: f7e756daea2cb4b4d91e4e22e64befab, type: 3}
+  - stateDataCSV: {fileID: 4900000, guid: ff33d406f3902e64399812c1d4ef0586, type: 3}
+  - dataPrefab: {fileID: 6652343095128787092, guid: 7f05b383266340d47a38363ac9371176, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

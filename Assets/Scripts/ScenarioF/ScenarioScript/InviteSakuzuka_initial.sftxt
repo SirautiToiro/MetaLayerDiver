@@ -1,0 +1,36 @@
+#command　　　　　　　 | Dialogue command: {write dialogue async}                                                           　　　　　　　　　　 | 
+#token  　　　　　　　 | Dialogue token code: {$standard}                                                                   　　　　　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                             　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {マルチタスカー}.                                                                                　　　 | 
+        　　　　　　　 | Right:{false} inversion:{false}                                                                    　　　　　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                             　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {信仰武者}.                                                                                　　　　　　 | 
+        　　　　　　　 | Right:{true} inversion:{true}                                                                      　　　　　　　　　　 | 
+信仰武者        　　　 | ところで、もう一人、仲間を誘おうと思っているんだ。                                                           　　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                             　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {共鳴弦}.                                                                                　　　　　　　 | 
+        　　　　　　　 | Right:{true} inversion:{true}                                                                      　　　　　　　　　　 | 
+マルチタスカー         | 共鳴弦ちゃん？                                                                                                   　　　 | 
+マルチタスカー         | あの子がいてくれると助かる。いい子だから。                                                                                | 
+$sync   　　　　　　　 | change character image                                                                             　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {信仰武者}.                                                                                　　　　　　 | 
+        　　　　　　　 | Right:{true} inversion:{true}                                                                      　　　　　　　　　　 | 
+信仰武者        　　　 | いや、あの子には何度も断られた。                                                                               　　　　　 | 
+        　　　　　　　 | 酒場で働くのに忙しいんだってさ。                                                                               　　　　　 | 
+マルチタスカー         | じゃあ、誰にするんだ？                                                                               　　　　　　　　　　 | 
+信仰武者        　　　 | 町のはずれの小高い丘に、小屋を建てて住んでいる女性がいる。                                                           　　　 | 
+        　　　　　　　 | 何でも屋みたいな人だ。                                                                               　　　　　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                             　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {作図家}.                                                                                　　　　　　　 | 
+        　　　　　　　 | Right:{false} inversion:{false}                                                                    　　　　　　　　　　 | 
+信仰武者        　　　 | 物を作るのが得意で、この村の建物も、ほとんどを設計している。                                                           　　 | 
+        　　　　　　　 | 机とかグラスとか、そのほか何でも。                                                                               　　　　 | 
+信仰武者        　　　 | この村の人は彼女に頭が上がらないね。だが、本人は人見知りをするようで小屋に引きこもっている。                   　　　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                                             　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {マルチタスカー}.                                                                                　　　 | 
+        　　　　　　　 | Right:{false} inversion:{false}                                                                    　　　　　　　　　　 | 
+マルチタスカー         | 器用な人ってところか。たぶん頭が良すぎるんだろうな。                                                           　　　　　　 | 
+信仰武者        　　　 | 単純な良い悪いの話じゃないだろう。俺も人づてに聞いたんだが、酒を飲むのは好きらしい。                                       　 | 
+        　　　　　　　 | 飲みながらなら仲間に誘えるかもしれない。                                                                               　 | 
+信仰武者        　　　 | ちょっとバーマスターのところに行ってビールを買ってきてくれないか？　それを持って会いに行こう。                   　　　　　　　 | 
+信仰武者        　　　 | 彼女が仲間になれば、俺たちも拠点が作れるかもしれない。                                                           　　　　　 | 

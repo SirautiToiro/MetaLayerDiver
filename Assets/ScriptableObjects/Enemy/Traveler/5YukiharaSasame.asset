@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e78c3892bfb56248ad660e18a03e089, type: 3}
+  m_Name: 5YukiharaSasame
+  m_EditorClassIdentifier: 
+  serialNum: 5
+  enemyName: "\u96EA\u539F\u3055\u3055\u3081"
+  hp: 54
+  picSprites:
+  - {fileID: 21300000, guid: ffbba1fdb32a45d4bbc93f04ed3c6ddd, type: 3}
+  actions1:
+  - actionsInTurn:
+    - enemyAction: 6
+      value: 4
+      UseState:
+        rid: -2
+    - enemyAction: 12
+      value: 2
+      UseState:
+        rid: 679717475878961155
+  - actionsInTurn:
+    - enemyAction: 0
+      value: 4
+      UseState:
+        rid: -2
+    - enemyAction: 0
+      value: 4
+      UseState:
+        rid: -2
+  - actionsInTurn:
+    - enemyAction: 0
+      value: 3
+      UseState:
+        rid: -2
+    - enemyAction: 0
+      value: 3
+      UseState:
+        rid: -2
+    - enemyAction: 0
+      value: 3
+      UseState:
+        rid: -2
+  - actionsInTurn:
+    - enemyAction: 0
+      value: 8
+      UseState:
+        rid: -2
+    - enemyAction: 12
+      value: 2
+      UseState:
+        rid: 679717475878961152
+  actions2: []
+  actions3: []
+  initialAction: []
+  enemyRoutine:
+    enemyRoutine: 0
+  enemyInitialEffects:
+  - Initial: 0
+    State:
+      rid: 679717475878961153
+    Value: 4
+  gage: 0
+  tier:
+    tier: 2
+  spawn:
+    dungeonType: 0
+  uniqueTag:
+    uniqueTag: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 679717475878961152
+      type: {class: StateStan, ns: , asm: Assembly-CSharp}
+      data: 
+    - rid: 679717475878961153
+      type: {class: StateSnowBlessing, ns: , asm: Assembly-CSharp}
+      data: 
+    - rid: 679717475878961155
+      type: {class: StateAttackDown, ns: , asm: Assembly-CSharp}
+      data: 

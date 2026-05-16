@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88b923325b1e81e4ab1fe91a50fb8f08, type: 3}
+  m_Name: 1GoldRing
+  m_EditorClassIdentifier: 
+  SerialNum: 1
+  ItemName: "\u91D1\u306E\u6307\u8F2A"
+  IconSprite: {fileID: 21300000, guid: b85a5ca4d8aee6b49b358d350523f67f, type: 3}
+  MiniIconSprite: {fileID: 0}
+  StackMax: 3
+  SizeX: 1
+  SizeY: 1
+  PhysicalItemType:
+    itemType: 3
+  Tier:
+    tier: 0
+  WeaponData: {fileID: 0}
+  ConsumablesData: {fileID: 0}
+  TreasuresOrDropsData: {fileID: 11400000, guid: 9ed6f78b33acaf641beb89eadc2b45dc, type: 2}

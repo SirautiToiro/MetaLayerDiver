@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f10ac18f61bbdc4f9dc5ae62ec114fd, type: 3}
+  m_Name: -1AnyoneCard
+  m_EditorClassIdentifier: 
+  serialNum: -1
+  cost: 0
+  cardName: "\u4EFB\u610F\u306E\u30AB\u30FC\u30C9"
+  iconSprite: {fileID: 21300000, guid: fb82a006bb0a6024ba93f350fd2d76e3, type: 3}
+  effectList: []
+  targetDefine:
+    effectTarget: 1
+  attributeList:
+  - attribute: 6
+  tagList:
+  - cardTag: 8
+  tier:
+    tier: 2
+  specialEffect:
+    specialEffect: 0
+  references:
+    version: 2
+    RefIds: []

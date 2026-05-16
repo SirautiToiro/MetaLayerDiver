@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0629a9db4f51ba44e81ae44c10f0ea3c, type: 3}
+  m_Name: 1_InviteTraveler
+  m_EditorClassIdentifier: 
+  ID: 1
+  QuestList:
+  - rid: 3630694103637819398
+  - rid: 679717284692623374
+  - rid: 679717284692623375
+  - rid: 679717284692623376
+  - rid: 679717284692623377
+  - rid: 679717284692623378
+  references:
+    version: 2
+    RefIds:
+    - rid: 679717284692623374
+      type: {class: BranchQuest, ns: , asm: Assembly-CSharp}
+      data:
+        nextQuestLine: {fileID: 11400000, guid: 7abfdc12e95f63a40971a2f79c458fb1, type: 2}
+    - rid: 679717284692623375
+      type: {class: BranchQuest, ns: , asm: Assembly-CSharp}
+      data:
+        nextQuestLine: {fileID: 11400000, guid: ef7a8b923e03cff4e9d72ecf37c5cda2, type: 2}
+    - rid: 679717284692623376
+      type: {class: StoryQuest, ns: , asm: Assembly-CSharp}
+      data:
+        questTitle: "\u62E0\u70B9\u5EFA\u7BC91"
+        questStoryType: 3
+        introductionText: "\u5EFA\u7269\u3092\u4F5C\u308B\u305F\u3081\u306B\u5FC5\u8981\u306A\u306E\u306F\u4F55\u304B\u3063\u3066\u5206\u304B\u308B\uFF1F\u3000\u3044\u3084\u3001\u5168\u3066\u306E\u82B8\u8853\u6D3B\u52D5\u306B\u5FC5\u8981\u306A\u3082\u306E\u3002\u3068\u3063\u3066\u3082\u305F\u304F\u3055\u3093\u306E\u970A\u611F\u3002\u3059\u306A\u308F\u3061\u7406\u5C48\u3092\u8D85\u3048\u305F\u76F4\u611F\u306A\u3093\u3060\uFF01"
+        questClient: "\u4F5C\u56F3\u5BB6"
+        initialScenarioScript: {fileID: 0}
+        endingScenarioScript: {fileID: 0}
+        questRequest:
+          requestType: 0
+          RequiredCards:
+          - CardData: {fileID: 11400000, guid: 1d9f3eeed79e0864893a8c1036ed4f6b, type: 2}
+            Stack: 5
+          RequiredItems: []
+          RequiredEnemies:
+            IsAnyEnemy: 0
+            EnemyData: {fileID: 0}
+            Num: 0
+        questReward:
+          RewardGold: 3
+          RewardCards:
+          - CardData: {fileID: 11400000, guid: 2fd136013685a934192fabfc84b20921, type: 2}
+            Stack: 3
+          RewardItems: []
+    - rid: 679717284692623377
+      type: {class: StoryQuest, ns: , asm: Assembly-CSharp}
+      data:
+        questTitle: "\u62E0\u70B9\u5EFA\u7BC92"
+        questStoryType: 3
+        introductionText: "\u76F4\u611F\u3060\u3051\u3058\u3083\u30C0\u30E1\u3060\u3063\u305F\u307F\u305F\u3044\u3002\u79C1\u306F\u4ECA\u3001\u5275\u4F5C\u306B\u3044\u304D\u3065\u307E\u308A\u3092\u611F\u3058\u3066\u3044\u308B\u3002\u4F55\u304B\u3001\u5148\u4EBA\u306E\u77E5\u6075\u306B\u5B66\u3079\u306A\u3044\u304B\u306A\u3002\u3044\u3044\u672C\u3092\u6301\u3063\u3066\u3044\u305F\u308A\u3057\u306A\u3044\uFF1F"
+        questClient: "\u4F5C\u56F3\u5BB6"
+        initialScenarioScript: {fileID: 0}
+        endingScenarioScript: {fileID: 0}
+        questRequest:
+          requestType: 2
+          RequiredCards: []
+          RequiredItems:
+          - ItemData: {fileID: 11400000, guid: e150bb4a57d1b1348b5bcfdde4ac29c1, type: 2}
+            X: 0
+            Y: 0
+            Stack: 1
+          RequiredEnemies:
+            IsAnyEnemy: 0
+            EnemyData: {fileID: 0}
+            Num: 0
+        questReward:
+          RewardGold: 7
+          RewardCards: []
+          RewardItems: []
+    - rid: 679717284692623378
+      type: {class: StoryQuest, ns: , asm: Assembly-CSharp}
+      data:
+        questTitle: "\u62E0\u70B9\u5EFA\u7BC93"
+        questStoryType: 3
+        introductionText: "\u3046\u3093\u3001\u609F\u3063\u305F\uFF01\u3000\u56F3\u9762\u306F\u3082\u3046\u66F8\u3044\u305F\u3088\u3002\u5F8C\u306F\u305F\u304F\u3055\u3093\u3001\u672C\u5F53\u306B\u305F\u304F\u3055\u3093\u306E\u91D1\u8CA8\u304C\u5FC5\u8981\u3060\u306A\u3002\u79C1\u305F\u3061\u306E\u5BB6\u306F\u5B87\u5B99\u4ED5\u69D8\u306B\u306A\u308B\u3093\u3060\u3002\u30AE\u30E3\u30E9\u30AF\u30B7\u30FC\u7D1A\u4E00\u6238\u5EFA\u3066\u3060\u3088\uFF01"
+        questClient: "\u4F5C\u56F3\u5BB6"
+        initialScenarioScript: {fileID: 0}
+        endingScenarioScript: {fileID: 0}
+        questRequest:
+          requestType: 2
+          RequiredCards: []
+          RequiredItems:
+          - ItemData: {fileID: 11400000, guid: 6355b0b28773a1a489171d3e869abb1f, type: 2}
+            X: 0
+            Y: 0
+            Stack: 5
+          - ItemData: {fileID: 11400000, guid: 6355b0b28773a1a489171d3e869abb1f, type: 2}
+            X: 1
+            Y: 0
+            Stack: 5
+          - ItemData: {fileID: 11400000, guid: 6355b0b28773a1a489171d3e869abb1f, type: 2}
+            X: 2
+            Y: 0
+            Stack: 5
+          - ItemData: {fileID: 11400000, guid: 6355b0b28773a1a489171d3e869abb1f, type: 2}
+            X: 3
+            Y: 0
+            Stack: 5
+          - ItemData: {fileID: 11400000, guid: 6355b0b28773a1a489171d3e869abb1f, type: 2}
+            X: 4
+            Y: 0
+            Stack: 5
+          - ItemData: {fileID: 11400000, guid: 6355b0b28773a1a489171d3e869abb1f, type: 2}
+            X: 0
+            Y: 1
+            Stack: 5
+          RequiredEnemies:
+            IsAnyEnemy: 0
+            EnemyData: {fileID: 0}
+            Num: 0
+        questReward:
+          RewardGold: 0
+          RewardCards:
+          - CardData: {fileID: 11400000, guid: ac9f146c94729e447aef7a74a9b65dc2, type: 2}
+            Stack: 1
+          RewardItems: []
+    - rid: 3630694103637819398
+      type: {class: StoryQuest, ns: , asm: Assembly-CSharp}
+      data:
+        questTitle: "\u8A98\u3044\u305F\u3044\u4EF2\u9593\u304C\u3044\u308B\u3093\u3060"
+        questStoryType: 0
+        introductionText: "\u4FFA\u305F\u3061\u306E\u4EF2\u9593\u306B\u3057\u305F\u3044\u5974\u304C\u3044\u308B\u3093\u3060\u3002\n\u9152\u3092\u6301\u3063\u3066\u884C\u3051\u3070\u8A98\u3048\u308B\u3068\u601D\u3046\u304B\u3089\u3001\u30D0\u30FC\u30DE\u30B9\u30BF\u30FC\u304B\u3089\u8CB7\u3063\u3066\u304D\u3066\u304F\u308C\u3002"
+        questClient: "\u4FE1\u4EF0\u6B66\u8005"
+        initialScenarioScript: {fileID: 5022602860645237092, guid: 0247a5efb0d0c50449627fada0569ed0, type: 3}
+        endingScenarioScript: {fileID: 5022602860645237092, guid: cc148d53e62031f479fbc88e9bb73241, type: 3}
+        questRequest:
+          requestType: 2
+          RequiredCards: []
+          RequiredItems:
+          - ItemData: {fileID: 11400000, guid: c46327101f25261478db2dab2b342992, type: 2}
+            X: 0
+            Y: 0
+            Stack: 2
+          RequiredEnemies:
+            IsAnyEnemy: 0
+            EnemyData: {fileID: 0}
+            Num: 0
+        questReward:
+          RewardGold: 0
+          RewardCards:
+          - CardData: {fileID: 11400000, guid: 1d9f3eeed79e0864893a8c1036ed4f6b, type: 2}
+            Stack: 1
+          RewardItems: []

@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e78c3892bfb56248ad660e18a03e089, type: 3}
+  m_Name: 5OneEyeGiant
+  m_EditorClassIdentifier: 
+  serialNum: 5
+  enemyName: "\u4E00\u3064\u76EE\u5DE8\u982D\u84CB\u9AA8"
+  hp: 15
+  picSprites:
+  - {fileID: 21300000, guid: d69b0a6e05db68c42a5bc4a60eb27b18, type: 3}
+  actions1:
+  - actionsInTurn:
+    - enemyAction: 0
+      value: 2
+      UseState:
+        rid: -2
+    - enemyAction: 0
+      value: 2
+      UseState:
+        rid: -2
+  - actionsInTurn:
+    - enemyAction: 6
+      value: 3
+      UseState:
+        rid: -2
+    - enemyAction: 12
+      value: 3
+      UseState:
+        rid: 5081523189948874755
+  - actionsInTurn:
+    - enemyAction: 6
+      value: 7
+      UseState:
+        rid: -2
+  - actionsInTurn:
+    - enemyAction: 6
+      value: 7
+      UseState:
+        rid: -2
+    - enemyAction: 6
+      value: 7
+      UseState:
+        rid: -2
+  actions2: []
+  actions3: []
+  initialAction: []
+  enemyRoutine:
+    enemyRoutine: 0
+  enemyInitialEffects: []
+  gage: 0
+  tier:
+    tier: 1
+  spawn:
+    dungeonType: 0
+  uniqueTag:
+    uniqueTag: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 5081523189948874755
+      type: {class: StateAttackDown, ns: , asm: Assembly-CSharp}
+      data: 

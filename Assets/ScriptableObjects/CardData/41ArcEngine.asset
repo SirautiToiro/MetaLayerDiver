@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f10ac18f61bbdc4f9dc5ae62ec114fd, type: 3}
+  m_Name: 41ArcEngine
+  m_EditorClassIdentifier: 
+  serialNum: 41
+  cost: 3
+  cardName: "\u30A2\u30FC\u30AF\u30A8\u30F3\u30B8\u30F3"
+  iconSprite: {fileID: 21300000, guid: 10e55cb22b52e4f4ba92c7ef8513aa67, type: 3}
+  effectList:
+  - Effect:
+      cardEffect: 8
+      value: 20
+    UseState:
+      rid: 3021251860271726592
+  targetDefine:
+    effectTarget: 1
+  attributeList:
+  - attribute: 3
+  tagList: []
+  tier:
+    tier: 2
+  specialEffect:
+    specialEffect: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 3021251860271726592
+      type: {class: StateAttackUpByAttribute, ns: , asm: Assembly-CSharp}
+      data:
+        attribute: 3

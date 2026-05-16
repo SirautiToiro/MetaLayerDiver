@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0629a9db4f51ba44e81ae44c10f0ea3c, type: 3}
+  m_Name: 2_DanceParty
+  m_EditorClassIdentifier: 
+  ID: 2
+  QuestList:
+  - rid: 679717284692623362
+  - rid: 679717284692623363
+  - rid: 679717284692623364
+  - rid: 679717284692623365
+  references:
+    version: 2
+    RefIds:
+    - rid: 679717284692623362
+      type: {class: StoryQuest, ns: , asm: Assembly-CSharp}
+      data:
+        questTitle: "\u8E0A\u308A\u306E\u821E\u53F0"
+        questStoryType: 3
+        introductionText: "\u30D4\u30A8\u30ED\u3055\u3093\u304C\u3061\u3087\u3063\u3068\u3057\u305F\u82B8\u3092\u3059\u308B\u304B\u3089\u304A\u7ACB\u3061\u53F0\u3092\u4F5C\u3063\u3066\u307B\u3057\u3044\u3093\u3060\u3063\u3066\u3002\u8E0A\u308A\u304C\u30E1\u30A4\u30F3\u3067\u3001\u30DE\u30B8\u30C3\u30AF\u3068\u304B\u3082\u3059\u308B\u3089\u3057\u3044\u3088\u3002\u3067\u3082\u79C1\u3001\u4EBA\u304C\u8E0A\u3063\u3066\u3044\u308B\u3068\u3053\u308D\u306A\u3093\u3066\u898B\u305F\u3053\u3068\u304C\u306A\u3044\u304B\u3089\u3001\u3061\u3087\u3063\u3068\u8E0A\u3063\u3066\u307F\u305B\u3066\u304F\u308C\u308B\uFF1F"
+        questClient: "\u4F5C\u56F3\u5BB6"
+        initialScenarioScript: {fileID: 0}
+        endingScenarioScript: {fileID: 0}
+        questRequest:
+          requestType: 0
+          RequiredCards:
+          - CardData: {fileID: 11400000, guid: 761f4afe6f45cca42bba2ec67fee8735, type: 2}
+            Stack: 2
+          - CardData: {fileID: 11400000, guid: c734915a4879e01468b0f657f87a0470, type: 2}
+            Stack: 2
+          RequiredItems: []
+          RequiredEnemies:
+            IsAnyEnemy: 0
+            EnemyData: {fileID: 0}
+            Num: 0
+        questReward:
+          RewardGold: 5
+          RewardCards: []
+          RewardItems: []
+    - rid: 679717284692623363
+      type: {class: StoryQuest, ns: , asm: Assembly-CSharp}
+      data:
+        questTitle: "\u6F14\u6280\u6307\u5C0E"
+        questStoryType: 3
+        introductionText: "\u3061\u3087\u3063\u3068\uFF01\u3000\u305D\u3093\u306A\u8E0A\u308A\u65B9\u3058\u3083\u8AB0\u3082\u559C\u3070\u306A\u3044\u308F\u3088\uFF01\u3000\u30A2\u30B8\u306E\u958B\u304D\u304C\u5E72\u3055\u308C\u3066\u63FA\u308C\u3066\u3044\u308B\u306E\u304B\u3068\u601D\u3063\u3061\u3083\u3063\u305F\uFF01\u3000\u30BF\u30FC\u30F3\u306E\u4E00\u3064\u3082\u3057\u3066\u307F\u306A\u3055\u3044\u3002\u307B\u3089\u3001\u91CD\u5FC3\u3092\u5927\u4E8B\u306B\u3002\u56DE\u3063\u3066\u307F\u308B\u306E\u3088\uFF01"
+        questClient: "\u5171\u9CF4\u5F26"
+        initialScenarioScript: {fileID: 0}
+        endingScenarioScript: {fileID: 0}
+        questRequest:
+          requestType: 0
+          RequiredCards:
+          - CardData: {fileID: 11400000, guid: 4d8e87cf2620d804daf0c77567db86b2, type: 2}
+            Stack: 2
+          RequiredItems: []
+          RequiredEnemies:
+            IsAnyEnemy: 0
+            EnemyData: {fileID: 0}
+            Num: 0
+        questReward:
+          RewardGold: 0
+          RewardCards: []
+          RewardItems:
+          - ItemData: {fileID: 11400000, guid: 6950324e3de2f77479baa9ccb90d3263, type: 2}
+            X: 0
+            Y: 0
+            Stack: 1
+    - rid: 679717284692623364
+      type: {class: StoryQuest, ns: , asm: Assembly-CSharp}
+      data:
+        questTitle: "\u821E\u53F0\u306E\u5B8C\u6210"
+        questStoryType: 3
+        introductionText: "\u30C0\u30F3\u30B9\u3063\u3066\u601D\u3063\u305F\u3088\u308A\u6FC0\u3057\u304F\u52D5\u304F\u3093\u3060\u306D\u3002\u571F\u53F0\u3092\u9811\u4E08\u306B\u3057\u306A\u3044\u3068\u3044\u3051\u306A\u3044\u304B\u3082\u3002\u69CB\u9020\u3082\u5DE5\u592B\u3057\u305F\u307B\u3046\u304C\u826F\u3044\u304B\u306A\u3002\u3068\u308A\u3042\u3048\u305A\u3001\u541B\u306F\u571F\u53F0\u306B\u4F7F\u3046\u7D20\u6750\u3092\u6301\u3063\u3066\u304D\u3066\u307B\u3057\u3044\u306A\u3002\u305D\u3046\u3060\u306D\u3001\u5927\u304D\u306A\u9AA8\u304C\u3044\u3044\u3068\u601D\u3046\u3002"
+        questClient: "\u4F5C\u56F3\u5BB6"
+        initialScenarioScript: {fileID: 0}
+        endingScenarioScript: {fileID: 0}
+        questRequest:
+          requestType: 2
+          RequiredCards: []
+          RequiredItems:
+          - ItemData: {fileID: 11400000, guid: f909f0dd613f89f4696f267aabc6c7c9, type: 2}
+            X: 0
+            Y: 0
+            Stack: 3
+          RequiredEnemies:
+            IsAnyEnemy: 0
+            EnemyData: {fileID: 0}
+            Num: 0
+        questReward:
+          RewardGold: 2
+          RewardCards:
+          - CardData: {fileID: 11400000, guid: ca2de36c07bcca14e849b7a04aaea359, type: 2}
+            Stack: 1
+          RewardItems: []
+    - rid: 679717284692623365
+      type: {class: StoryQuest, ns: , asm: Assembly-CSharp}
+      data:
+        questTitle: "\u5927\u76DB\u6CC1"
+        questStoryType: 3
+        introductionText: "\u30D4\u30A8\u30ED\u3055\u3093\u306E\u821E\u53F0\u304C\u5927\u3057\u305F\u8CD1\u308F\u3044\u3060\uFF01\u3000\u3046\u3061\u304C\u51FA\u3057\u3066\u3044\u308B\u51FA\u5E97\u3082\u7E41\u76DB\u3057\u3066\u3057\u307E\u3063\u3066\u306D\u3002\u8089\u3092\u713C\u304F\u305F\u3081\u306E\u706B\u304C\u5207\u308C\u3066\u3057\u307E\u3063\u305F\u3093\u3060\u3002\u706B\u4ED8\u7D19\u3063\u3066\u30AB\u30FC\u30C9\u96C6\u3081\u3066\u304D\u3066\u304F\u308C\u306A\u3044\u304B\uFF1F\u3000\u5927\u81F3\u6025\u3060\uFF01"
+        questClient: "\u30D0\u30FC\u30DE\u30B9\u30BF\u30FC"
+        initialScenarioScript: {fileID: 0}
+        endingScenarioScript: {fileID: 0}
+        questRequest:
+          requestType: 0
+          RequiredCards:
+          - CardData: {fileID: 11400000, guid: 79f6f2738899bec43b60a1dd0f5b4cbe, type: 2}
+            Stack: 3
+          RequiredItems: []
+          RequiredEnemies:
+            IsAnyEnemy: 0
+            EnemyData: {fileID: 0}
+            Num: 0
+        questReward:
+          RewardGold: 15
+          RewardCards: []
+          RewardItems: []

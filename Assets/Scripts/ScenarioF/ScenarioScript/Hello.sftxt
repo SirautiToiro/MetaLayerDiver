@@ -1,0 +1,28 @@
+$sync     | change character image                                                        　　　　　　　　　　 | 
+          | {マルチタスカー}に.右:{false} 反転:{false}                                      　　　　　　　　　　 | 
+$sync     | change character image                                                        　　　　　　　　　　 | 
+          | Change image to {Null}.Right:{true} inversion:{false}                         　　　　　　　　　　 | 
+$standard | write dialogue async                                                          　　　　　　　　　　 | 
+          | {マルチタスカー},{ここは、どこだ？}                                                     　　　　　　 | 
+$standard | write dialogue async                                                          　　　　　　　　　　 | 
+          | {マルチタスカー},{随分僻地に来たように思うけど、驚いたな。村がある。}                                  | 
+$sync     | change character image                                                        　　　　　　　　　　 | 
+          | {信仰武者}に.右:{true} 反転:{true}                                                            　　 | 
+$standard | write dialogue async                                                          　　　　　　　　　　 | 
+          | {信仰武者},{なんだお前。見かけない顔だな。お客様か？}                                 　　　　　　　　 | 
+$standard | write dialogue async                                                          　　　　　　　　　　 | 
+          | {マルチタスカー},{おお、人もいるな。お客様か、お客様だよ。}                                 　　　　　 | 
+$standard | write dialogue async                                                          　　　　　　　　　　 | 
+          | {信仰武者}say,{あいにく大した所じゃない。目的もなく迷い込んだのなら、ふもとまで送るぜ。}          　　　 | 
+$standard | write dialogue async                                                          　　　　　　　　　　 | 
+          | {マルチタスカー},{必要ない。あんた見たところ強そうだな。この村には"何か"がある。違うか？}           　　 | 
+$standard | write dialogue async                                                          　　　　　　　　　　 | 
+          | {信仰武者},{そうだ。ようこそ、冒険者の村へ。}                                                     　 | 
+$standard | write dialogue async                                                          　　　　　　　　　　 | 
+          | {信仰武者},{"それ"があるのは正確にはこの村じゃない。俺たちも探している最中だ。}           　　　　　　　 | 
+$standard | write dialogue async                                                          　　　　　　　　　　 | 
+          | {信仰武者},{詳しくは中で話そうか。この村には酒場がある。みな、そこで話をする。}             　　　　　　 | 
+$standard | write dialogue async                                                          　　　　　　　　　　 | 
+          | {マルチタスカー},{そこってエナジードリンクは出るのか？}                                 　　　　　　　 | 
+$standard | write dialogue async                                                          　　　　　　　　　　 | 
+          | {信仰武者},{あるわけないだろ。馬鹿野郎}             　　　　　　　 | 

@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f10ac18f61bbdc4f9dc5ae62ec114fd, type: 3}
+  m_Name: 39MysticKnife
+  m_EditorClassIdentifier: 
+  serialNum: 39
+  cost: 1
+  cardName: "\u5E7B\u60F3\u30CA\u30A4\u30D5"
+  iconSprite: {fileID: 21300000, guid: de224dd23db9e1d4bbd9ad8bb37a480f, type: 3}
+  effectList:
+  - Effect:
+      cardEffect: 0
+      value: 4
+    UseState:
+      rid: 3021251818407591937
+  targetDefine:
+    effectTarget: 4
+  attributeList:
+  - attribute: 5
+  tagList:
+  - cardTag: 6
+  - cardTag: 7
+  tier:
+    tier: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 3021251818407591937
+      type: {class: StateBurn, ns: , asm: Assembly-CSharp}
+      data: 

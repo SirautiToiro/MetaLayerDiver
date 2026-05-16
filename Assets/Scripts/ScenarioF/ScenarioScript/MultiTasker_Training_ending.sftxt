@@ -1,0 +1,19 @@
+#command　　　　　　　 | Dialogue command: {write dialogue async}                                       　　　　　　　　　　 | 
+#token  　　　　　　　 | Dialogue token code: {$standard}                                               　　　　　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                         　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {マルチタスカー}.                                                            　　　 | 
+        　　　　　　　 | Right:{false} inversion:{false}                                                　　　　　　　　　　 | 
+$sync   　　　　　　　 | change character image                                                         　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {共鳴弦}.                                                            　　　　　　　 | 
+        　　　　　　　 | Right:{true} inversion:{true}                                                  　　　　　　　　　　 | 
+マルチタスカー         | 「フィンガービーム」を持ってきたぞ。                                                           　　　 | 
+共鳴弦        　　　　 | いいじゃない。早速使ってみたら？                                                           　　　　　 | 
+Null    　　　　　　　 | マルチタスカーの指からビームが出て、生えていた木に命中する。                                       　　 | 
+共鳴弦        　　　　 | そのカードは使うとデッキからカードを引くわ。                                       　　　　　　　　　　 | 
+        　　　　　　　 | 強いカードを引きやすくなるから、カードを引くってことは思ったより重要よ。                   　　　　　　　 | 
+共鳴弦        　　　　 | 「フィンガースナップ」みたいな、コストが0のカードは引いたとたんに使えるしね。                  　　　　　 | 
+マルチタスカー         | ありがとう。教えてくれて。                                                           　　　　　　　　 | 
+共鳴弦        　　　　 | 別に。あんたみたいな人はほうっておけないってだけよ。嘘とか、つけないでしょ？                   　　　　　 | 
+マルチタスカー         | なんだよ。嘘くらい、ついたことがあるさ。                                                           　 | 
+共鳴弦        　　　　 | 初めての嘘ね。はい、じゃあこれで今日はおしまい！　でも、時々あなたの練習を見てあげる。                    | 
+共鳴弦        　　　　 | 夜ご飯は食べた？　うちで食べていくでしょう？                                       　　　　　　　　　　 | 

@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f10ac18f61bbdc4f9dc5ae62ec114fd, type: 3}
+  m_Name: 50AsyuraMode
+  m_EditorClassIdentifier: 
+  serialNum: 50
+  cost: 1
+  cardName: "\u30A2\u30B7\u30E5\u30E9\u30E2\u30FC\u30C9"
+  iconSprite: {fileID: 21300000, guid: b44989bc6327d0242b282e57f0da5ddc, type: 3}
+  effectList:
+  - Effect:
+      cardEffect: 8
+      value: 3
+    UseState:
+      rid: 2506268132898766848
+  - Effect:
+      cardEffect: 29
+      value: 0
+    UseState:
+      rid: -2
+  - Effect:
+      cardEffect: 30
+      value: 0
+    UseState:
+      rid: -2
+  targetDefine:
+    effectTarget: 1
+  attributeList:
+  - attribute: 1
+  - attribute: 4
+  tagList: []
+  tier:
+    tier: 1
+  specialEffect:
+    specialEffect: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 2506268132898766848
+      type: {class: StateAsyura, ns: , asm: Assembly-CSharp}
+      data: 
