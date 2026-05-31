@@ -33,8 +33,8 @@ public class DialogueMessage : IReflectable
         bool? pos = talkingCharacter.GetCharacterPos(character);
         if (pos.HasValue)
         {
-            talkingCharacter.SetCharacterImageBrightness(!pos.Value, 0.5f);
-            talkingCharacter.SetCharacterImageBrightness(pos.Value, 1.0f);
+            talkingCharacter.SetCharacterImageBrightness(!pos.Value, 0.5f,false);
+            talkingCharacter.SetCharacterImageBrightness(pos.Value, 1.0f,true);
         }
 
         try

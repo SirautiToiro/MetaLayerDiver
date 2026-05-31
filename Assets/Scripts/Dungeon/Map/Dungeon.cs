@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using System.Linq;
 
 /// <summary>
 /// ダンジョンマップのデータ構造格納,
@@ -123,19 +124,32 @@ public class Dungeon : MonoBehaviour
 
         int doorNum = GetTileGenerateNums(MapTileDefine.MapTile.Door);
         //固定の個数存在するdoor,stairについて、それまでに作った分を置き換えて生成する
+
+        List<(int x,int y)> doorPositions = new List<(int x, int y)>();
         for (int i = 0; i < doorNum; i++)
         {
             int ranX=UnityEngine.Random.Range(0, dungeonMap.GetLength(0));
             int ranY=UnityEngine.Random.Range(0, dungeonMap.GetLength(1));
-            if(dungeonMap[ranX,ranY]== MapTileDefine.MapTile.Door)
+            Debug.Log("try doorPos:"+ranX+","+ranY);
+            if (dungeonMap[ranX,ranY]== MapTileDefine.MapTile.Door)
             {//既に扉が生成されている位置なら
+                i--;//何もしないで逃げ帰る.カウントも進めない
+                continue;
+            }else if(
+                doorPositions.Where((pos)=>((pos.x-ranX)* (pos.x - ranX) + (pos.y-ranY)* (pos.y - ranY)) <=2).Any()
+            )
+            {
+                Debug.Log("hit");
+                //TODO:絶対効率悪い。後に解決したい。
+                //既に生成されている扉から近い位置なら
                 i--;//何もしないで逃げ帰る.カウントも進めない
                 continue;
             }
             else
             {//新しく扉を生成する
                 dungeonMap[ranX, ranY] = MapTileDefine.MapTile.Door;
-                
+                doorPositions.Add((ranX, ranY));
+                Debug.Log("doorPos:"+ranX+","+ranY);
             }
         }
 

@@ -15,6 +15,9 @@ public class TalkingCharacter : MonoBehaviour
     private CharacterImageManager.Character currentRightCharacter = CharacterImageManager.Character.Null;
     private CharacterImageManager.Character currentLeftCharacter = CharacterImageManager.Character.Null;
 
+    [SerializeField] private Image ArrowRight;
+    [SerializeField] private Image ArrowLeft;
+
     public void ChangeCharacterImage(CharacterImageManager.Character character, bool isRight, bool inversion)
     {
         if (isRight)
@@ -70,17 +73,41 @@ public class TalkingCharacter : MonoBehaviour
 
     }
 
-    public void SetCharacterImageBrightness(bool IsRight, float brightness)
+    /// <summary>
+    /// 会話中に会話者に応じて立ち絵の明るさを変える
+    /// </summary>
+    /// <param name="IsRight">右であるか</param>
+    /// <param name="brightness">明るさ</param>
+    /// <param name="isArrow">矢印を表示するか(brightnessの値と連動するはずだが、途中修正のため)</param>
+    public void SetCharacterImageBrightness(bool IsRight, float brightness,bool isArrow)
     {
         if (IsRight)
         {
             Color color = new Color(brightness, brightness, brightness, imageRight.color.a);
             imageRight.color = color;
+
+            if (isArrow)
+            {
+                ArrowRight.gameObject.SetActive(true);
+            }
+            else
+            {
+                ArrowRight.gameObject.SetActive(false);
+            }
         }
         else
         {
             Color color = new Color(brightness, brightness, brightness, imageLeft.color.a);
             imageLeft.color = color;
+
+            if (isArrow)
+            {
+                ArrowLeft.gameObject.SetActive(true);
+            }
+            else
+            {
+                ArrowLeft.gameObject.SetActive(false);
+            }
         }
     }
 

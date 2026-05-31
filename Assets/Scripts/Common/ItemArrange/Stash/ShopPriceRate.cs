@@ -9,6 +9,13 @@ using UnityEngine;
 [System.Serializable]
 public class ShopPriceRate
 {
+    public ShopPriceRate(int commonRate, int rareRate, int metaRate)
+    {
+        CommonRate = commonRate;
+        RareRate = rareRate;
+        MetaRate = metaRate;
+    }
+
     public int CommonRate;
     public int RareRate;
     public int MetaRate;

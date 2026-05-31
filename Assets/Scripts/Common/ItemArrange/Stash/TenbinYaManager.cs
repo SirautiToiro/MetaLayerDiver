@@ -32,6 +32,8 @@ public class TenbinYaManager : MonoBehaviour, IShopManager, IButtonWithHighlight
     //ボタン(表示を出し入れ)
     [SerializeField] private Button button;
 
+    [SerializeField] private PhysicalItemDataSO goldData;
+
     private enum ShopType
     {
         SellCards = 0,//カード販売画面
@@ -80,7 +82,62 @@ public class TenbinYaManager : MonoBehaviour, IShopManager, IButtonWithHighlight
 
     private void ShowShop(ShopType shopType,int soldPrice=0)
     {
-        //TODO:それまでに配置されていたカード類を戻す
+        //それまでに配置されていたカード類を戻す
+        switch (currentShopType)
+        {
+            case ShopType.SellCards:
+                //残っているアイテムをすべて移動する
+                //カード販売部分
+                Card remainedCard = null;
+                do
+                {
+                    List<Card> cardList = sellCardHolder.GetCardsInstances();
+                    if (cardList.Count > 0)
+                    {
+                        remainedCard = cardList[0];
+                        cardArrangeManager.QuickMove(remainedCard);
+                    }
+                    else
+                    {
+                        remainedCard = null;
+                    }
+                } while (remainedCard != null);
+                break;
+            case ShopType.SellItems:
+                //アイテム販売部分
+                //残っているアイテムをすべて移動する
+                List<PhysicalItemBase> itemList = sellItemHolder.GetItems();
+
+                foreach (PhysicalItemBase item in itemList)
+                {
+                    //アイテム要求のアイテムを1個ずつ移動する
+                    //すべてのスタックに対して
+                    physicalItemArrangeManager.QuickMove(item);
+                }
+                break;
+            case ShopType.ReturnGolds:
+                //アイテム販売部分
+                //残っているアイテムをすべて移動する
+                List<PhysicalItemBase> itemList2 = returnGoldHolder.GetItems();
+
+                foreach (PhysicalItemBase item in itemList2)
+                {
+                    //アイテム要求のアイテムを1個ずつ移動する
+                    //すべてのスタックに対して
+                    physicalItemArrangeManager.QuickMove(item);
+                }
+                break;
+        }
+
+
+        //対応するボタンを除いて、全てのボタンを消灯
+        for (int i = 0; i < buttonWithHighlightList.Count; i++)
+        {
+            buttonWithHighlightList[i].Init(this, false);
+        }
+        buttonWithHighlightList[(int)shopType].Init(this, true);
+
+        currentShopType = shopType;
 
         switch (shopType)
         {
@@ -109,10 +166,24 @@ public class TenbinYaManager : MonoBehaviour, IShopManager, IButtonWithHighlight
                 priceListPanel.Init(itemPriceRate);
                 break;
             case ShopType.ReturnGolds:
+                if(soldPrice>returnGoldHolder.GridHeight* returnGoldHolder.GridWidth* goldData.StackMax)
+                {
+                    shopMessage.ShowMessage("TooManyCards");//カードが多すぎる
+                }
+
                 sellCardHolder.gameObject.SetActive(false);
                 sellItemHolder.gameObject.SetActive(false);
                 returnGoldHolder.gameObject.SetActive(true);
                 button.gameObject.SetActive(false);
+
+                List<PhysicalItemDataSO> goldDataList = new List<PhysicalItemDataSO>() { };
+                int stackMax= goldData.StackMax;
+                for(int i = 0; i<soldPrice; i++)
+                {
+                    goldDataList.Add(goldData);
+                }
+
+                returnGoldHolder.Init(goldDataList, physicalItemArrangeManager,this,physicalItemInstantiateManager,new ShopPriceRate(0,0,0),true);
                 break;
         }
     }
@@ -120,7 +191,64 @@ public class TenbinYaManager : MonoBehaviour, IShopManager, IButtonWithHighlight
     //配置されているカード、アイテムを販売
     public void SellButton()
     {
-        ShowShop(ShopType.ReturnGolds,10);
+        int soldPrice = 0;
+
+        switch (currentShopType)
+        {
+            case ShopType.SellCards:
+                List<StorageData.CardStack> cardList = sellCardHolder.GetCards();
+                foreach (StorageData.CardStack card in cardList)
+                {
+                    switch(PlayerCardData.GetCardDataFromSerialNum(card.cardSerialNum).tier.tier)
+                    {
+                        case TierDefine.Tier.Common:
+                            soldPrice += cardPriceRate.CommonRate * card.Stack;
+                            break;
+                        case TierDefine.Tier.Rare:
+                            soldPrice += cardPriceRate.RareRate * card.Stack;
+                            break;
+                        case TierDefine.Tier.Meta:
+                            soldPrice += cardPriceRate.MetaRate * card.Stack;
+                            break;
+                    }
+                }
+
+                //中身を消す
+                sellCardHolder.Init(new List<StorageData.CardStack>() { }, cardArrangeManager, stashPanel, this);
+
+                break;
+            case ShopType.SellItems:
+                var items = sellItemHolder.GetItems();
+
+                foreach(PhysicalItemBase item in items)
+                {
+                    if(item.BaseItemData.PhysicalItemType==goldData.PhysicalItemType&&item.BaseItemData.SerialNum==goldData.SerialNum)
+                    {//ゴールドは同じ値段
+                        soldPrice += item.Stack;
+                        continue;
+                    }
+                    switch (item.GetItemData().Tier.tier)
+                    {
+                        case TierDefine.Tier.Common:
+                            soldPrice += itemPriceRate.CommonRate * item.Stack;
+                            break;
+                        case TierDefine.Tier.Rare:
+                            soldPrice += itemPriceRate.RareRate * item.Stack;
+                            break;
+                        case TierDefine.Tier.Meta:
+                            soldPrice += itemPriceRate.MetaRate * item.Stack;
+                            break;
+                    }
+                }
+
+                //中身を消す
+                sellItemHolder.Init(new List<PhysicalItemGridPosNumData>() { }, physicalItemArrangeManager, stashPanel, this);
+
+                break;
+            default:
+                return;
+        }
+        ShowShop(ShopType.ReturnGolds,soldPrice);
     }
 
     /// <summary>
@@ -203,6 +331,7 @@ public class TenbinYaManager : MonoBehaviour, IShopManager, IButtonWithHighlight
                 }
                 break;
         }
+        Debug.Log("Closed");
     }
 
     public ICardHolder GetCardHolderForQuickMove()

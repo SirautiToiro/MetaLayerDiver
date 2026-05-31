@@ -4224,6 +4224,7 @@ MonoBehaviour:
     RareRate: 3
     MetaRate: 8
   button: {fileID: 1829634864863270726}
+  goldData: {fileID: 11400000, guid: 6355b0b28773a1a489171d3e869abb1f, type: 2}
 --- !u!1 &8727583038642295129
 GameObject:
   m_ObjectHideFlags: 0
@@ -4304,12 +4305,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 7471096138962826003}
     m_Modifications:
     - target: {fileID: 852472491561847494, guid: 85c0d866a04d46d4cab21ccf6753dea8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2641220472380750012}
+    - target: {fileID: 852472491561847494, guid: 85c0d866a04d46d4cab21ccf6753dea8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: DuplicateButton
+      value: SellButton
       objectReference: {fileID: 0}
     - target: {fileID: 852472491561847494, guid: 85c0d866a04d46d4cab21ccf6753dea8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Clown_SanManager, Assembly-CSharp
+      value: TenbinYaManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6583953008179211035, guid: 85c0d866a04d46d4cab21ccf6753dea8, type: 3}
       propertyPath: m_Name

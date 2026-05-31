@@ -49,7 +49,7 @@ public class FieldManager : MonoBehaviour,IItemManager,IBaseUIPage
 
     [SerializeField] private int turnDrawNum;//ターンごとに引くカードの数
 
-    //カードを使用するときに消費するエネルギーとその最大値
+    //カードを使用するときに消費するエネルギー(AP)とその最大値
     private int energy;
     private int energyMax;
 
@@ -187,6 +187,8 @@ public class FieldManager : MonoBehaviour,IItemManager,IBaseUIPage
             DefeatBattle();
         }
 
+        inputBlocker.InputBlockingUp();//敵の行動中はプレイヤーの入力を受け付けないようにする
+
         //敵の行動
         enemyManager.ExecuteEnemiesAction(sequence);
 
@@ -204,6 +206,8 @@ public class FieldManager : MonoBehaviour,IItemManager,IBaseUIPage
 
         sequence.AppendCallback(() =>
         {
+            inputBlocker.InputBlockingDown();//敵の行動が終わったらプレイヤーの入力を受け付けるようにする
+
             Sequence checkDeadSequence = DOTween.Sequence();
 
             foreach (Enemy enemy in enemies)
@@ -346,7 +350,7 @@ public class FieldManager : MonoBehaviour,IItemManager,IBaseUIPage
         }
         else if (!IsPlayable(draggingItem))
         {// プレイできないカードならメッセージを表示
-            battleMessage.PlayerMessage("エネルギーが足りない！");
+            battleMessage.PlayerMessage("APが足りない！");
         }
 
         if (visualizedCardZone != null&&draggingItem!=null&&draggingItem is Card)

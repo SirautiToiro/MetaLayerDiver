@@ -1,7 +1,7 @@
 #command　　　　　　　 | Dialogue command: {write dialogue async}                                       　　　　　　　　　　 | 
-#token  　　　　　　　 | Dialogue token code: {$standard}                                                  　　　　　　　　　　 | 
+#token  　　　　　　　 | Dialogue token code: {$standard}                                               　　　　　　　　　　 | 
 $sync   　　　　　　　 | change character image                                                         　　　　　　　　　　 | 
-        　　　　　　　 | Change image to {マルチタスカー}.                                                   　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {マルチタスカー}.                                                            　　　 | 
         　　　　　　　 | Right:{false} inversion:{false}                                                　　　　　　　　　　 | 
 $sync   　　　　　　　 | change character image                                                         　　　　　　　　　　 | 
         　　　　　　　 | Change image to {信仰武者}.                                                            　　　　　　 | 
@@ -22,7 +22,7 @@ $sync   　　　　　　　 | change character image                          
         　　　　　　　 | Right:{true} inversion:{true}                                                  　　　　　　　　　　 | 
 信仰武者        　　　 | まあ待て。                                                                               　　　　　 | 
         　　　　　　　 | うまくいけば、俺たちは仲間になる。喧嘩はよそうじゃないか。                                       　　　 | 
-信仰武者        　　　 | 確かに、この近くには"それ"がある。この酒場に居る者は多かれ少なかれ、"それ"を求めている。               　　 | 
+信仰武者        　　　 | 確かに、この近くには"それ"がある。この酒場に居る者は多かれ少なかれ、"それ"を求めている。               　 | 
 信仰武者        　　　 | 俺は協力して事にあたるのが良いだろうと思っている。                                       　　　　　　　 | 
         　　　　　　　 | その方が、効率的だ。                                                                                | 
 $sync   　　　　　　　 | change character image                                                         　　　　　　　　　　 | 
@@ -51,6 +51,7 @@ $sync   　　　　　　　 | change character image                          
         　　　　　　　 | 力はいらないから、ちょっと研究させてほしいな。                                       　　　　　　　　　 | 
 信仰武者        　　　 | なら話は決まりだな。共鳴弦、この子に追加のオレンジジュースと、焼き鳥のセットを。                   　　　 | 
 $sync   　　　　　　　 | change character image                                                         　　　　　　　　　　 | 
-        　　　　　　　 | Change image to {共鳴弦}.                                                   　　　　　　　　　　 | 
-        　　　　　　　 | Right:{true} inversion:{true}                                          　　　　　　　　　　 | 
+        　　　　　　　 | Change image to {共鳴弦}.                                                            　　　　　　　 | 
+        　　　　　　　 | Right:{true} inversion:{true}                                                  　　　　　　　　　　 | 
 共鳴弦        　　　　 | はーい。オレ一つと焼き鳥セット入りまーす！                                                            | 
+Null    　　　　　　　 | 宴の後に、軍資金を渡された。ダンジョンに行くため、先立つものが必要だ。                   　　　　　　　　 | 

@@ -168,3 +168,43 @@ public class BranchQuest : IQuest
         return nextQuestLine;
     }
 }
+
+/// <summary>
+/// システム上のイベントなど、ストーリー上のクエストではないもの。シナリオもクエスト要求も報酬も持たない。
+/// </summary>
+public class SystemCuest:IQuest
+{
+    public enum SystemQuestType
+    {
+        None,
+        UnlockDungeon,//ダンジョンの解放
+    }
+
+    //システムクエストのタイプ
+    [Header("システムクエストのタイプ")]
+    public SystemQuestType systemQuestType;
+
+    public string QuestTitle { get { return null; } }
+    public string QuestClient { get { return null; } }
+    public string IntroductionText { get { return null; } }
+    public ScenarioScript GetEndingScenarioScript()
+    {
+        return null;
+    }
+    public ScenarioScript GetInitialScenarioScript()
+    {
+        return null;
+    }
+    public QuestRequest GetQuestRequest()
+    {
+        return null;
+    }
+    public QuestStoryType? GetQuestStoryType()
+    {
+        return null;
+    }
+    public QuestReward GetQuestReward()
+    {
+        return null;
+    }
+}

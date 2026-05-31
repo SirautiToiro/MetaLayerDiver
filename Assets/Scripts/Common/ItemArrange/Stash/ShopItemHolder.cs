@@ -22,20 +22,73 @@ public class ShopItemHolder : MonoBehaviour, IGridPhysicalItemHolder
 
     private ShopPriceRate shopPriceRate;
 
+    //天秤屋の実装に伴い追加
+    private bool isMoveAllItem = false;//アイテムを全て移動させるかどうか。trueのときはスタック数に関わらず全て移動させる。falseのときは1スタックだけ移動させる
+
+    /// <summary>
+    /// PhysicalItemGridPosNumDataでの初期化。座標を最初から与える
+    /// </summary>
+    /// <param name="shopDataItems">初期化に使用するアイテムデータのリスト</param>
+    /// <param name="physicalItemArrangeManager">アイテム配置マネージャー</param>
+    /// <param name="shopManager">ショップマネージャー</param>
+    /// <param name="instantiateManager">アイテム生成マネージャー</param>
+    /// <param name="rate">ショップの価格レート</param>
     public void Init(List<PhysicalItemGridPosNumData> shopDataItems,PhysicalItemArrangeManager physicalItemArrangeManager,
-        IShopManager shopManager,PhysicalItemInstantiateManager instantiateManager, ShopPriceRate rate)
+        IShopManager shopManager,PhysicalItemInstantiateManager instantiateManager, ShopPriceRate rate, bool isMoveAllItem = false)
     {
         this.physicalItemArrangeManager = physicalItemArrangeManager;
         this.shopManager = shopManager;
         this.shopPriceRate = rate;
+        this.isMoveAllItem = isMoveAllItem;
         gridPhysicalItemArrangement.Init(shopDataItems, this,physicalItemArrangeManager,instantiateManager);
+    }
+
+    /// <summary>
+    /// PhysicalItemDataSOでの初期化。座標を与えない
+    /// </summary>
+    /// <param name="itemDataList">初期化に使用するアイテムデータのリスト</param>
+    /// <param name="physicalItemArrangeManager">アイテム配置マネージャー</param>
+    /// <param name="shopManager">ショップマネージャー</param>
+    /// <param name="instantiateManager">アイテム生成マネージャー</param>
+    /// <param name="rate">ショップの価格レート</param>
+    public void Init(List<PhysicalItemDataSO> itemDataList, PhysicalItemArrangeManager physicalItemArrangeManager,
+        IShopManager shopManager, PhysicalItemInstantiateManager instantiateManager, ShopPriceRate rate,bool isMoveAllItem=false)
+    {
+        this.physicalItemArrangeManager = physicalItemArrangeManager;
+        this.shopManager = shopManager;
+        this.shopPriceRate = rate;
+        this.isMoveAllItem = isMoveAllItem;
+        gridPhysicalItemArrangement.Init(new List<PhysicalItemGridPosNumData>(), this,physicalItemArrangeManager,instantiateManager);
+
+        // アイテムデータをグリッドにセット(一つずつ高速移動を用いる)
+        foreach (var itemData in itemDataList)
+        {
+            (int x, int y)? enptyZone = gridPhysicalItemArrangement.GetEmptyZone(itemData.SizeX, itemData.SizeY);
+            if (enptyZone.HasValue)
+            {
+                //新しく生成
+                PhysicalItemBase item = gridPhysicalItemArrangement.InstantiatePhysicalItem(
+                    new PhysicalItemGridPosNumData(itemData, enptyZone.Value.x, enptyZone.Value.y, 1));
+
+                //QuickMoveでセット
+                physicalItemArrangeManager.QuickMove(item, null, this);
+            }
+        }
     }
 
     public void PullItem(int posX, int posY)
     {
-        //PhysicalItemBase b = gridPhysicalItemArrangement.RemoveItemFromList(posX, posY);
+        PhysicalItemBase b = null;
+
+        if (isMoveAllItem)
+        {
+             b = gridPhysicalItemArrangement.RemoveItemFromList(posX, posY);
+        }
+        else
+        {
+            b = gridPhysicalItemArrangement.RemoveOneItemFromList(posX, posY);
+        }
         //1スタックだけを取り出すようにする
-        PhysicalItemBase b = gridPhysicalItemArrangement.RemoveOneItemFromList(posX, posY);
         shopManager.ChangeDisplayMode(true);//アイテムを表示するモードに切り替える
 
         shopManager.OnBuied(b);//購入時メッセージ

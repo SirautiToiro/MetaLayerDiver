@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.WSA;
 
 /// <summary>
 /// アイテムの移動画面の物理的アイテムを制御する部分
@@ -379,14 +380,33 @@ public class PhysicalItemArrangeManager : MonoBehaviour, IItemManager
 
             if (topPage is InventoryAndShopUIPage)
             {//店画面なら
-                if (itemHolder is InventoryEquipItemsHolder)
-                {//装備欄にあるアイテムの移動->バックパックへ移動
-                    QuickMove(pItem, targetZone, inventoryBackpackItemsHolder);
+                if (stashPanel.GetCurrentShopManager() is null) return;
+
+                if (itemHolder is InventoryEquipItemsHolder ||
+                    itemHolder is InventoryBackpackItemsHolder)
+                {//インベントリ内なら
+                    //高速移動の先になりうるIPhysicalItemHolder
+                    IPhysicalItemHolder afterHolder = stashPanel.GetCurrentShopManager().GetPhysicalItemHolderForQuickMove();
+                    Debug.Log("testA");
+                    if (afterHolder is null)
+                    {//移動先がないので手持ちでの移動
+                        if (itemHolder is InventoryEquipItemsHolder)
+                        {//装備欄にあるアイテムの移動->バックパックへ移動
+                            QuickMove(pItem, targetZone, inventoryBackpackItemsHolder);
+                        }
+                    }
+                    else
+                    {//移動先がある場合はそこへ
+                        Debug.Log("testB");
+
+                        QuickMove(item, targetZone, (IGridPhysicalItemHolder)afterHolder);
+                    }
                 }
                 else if (itemHolder is ShopItemHolder)
-                {
-                    //店->バックパックへ移動
-                    QuickMove(pItem, targetZone, inventoryBackpackItemsHolder);
+                {//店の場所ならバックパックへ
+                    Debug.Log("testC");
+
+                    QuickMove(item, targetZone, inventoryBackpackItemsHolder);
                 }
             }
             else if (topPage is InventoryAndStashUIPage)

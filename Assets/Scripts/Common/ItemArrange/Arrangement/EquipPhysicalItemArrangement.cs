@@ -174,6 +174,12 @@ public class EquipPhysicalItemArrangement : MonoBehaviour
         if (posY == 0)
         {
             targetCardZone = _equipCardZones0[posX];
+            if(posX>=2)
+            {
+                //•Ší‚ÌêŠ‚Í0‚Æ1‚Ì‚İ‚È‚Ì‚ÅA2ˆÈã‚Í–³Œø
+                //TODO:’Ç‰Á‰Â”\‚ÈğŒ‚ğl‚¦‚é
+                return new SetItemResult(false);
+            }
         }
         else if (posY == 1)
         {

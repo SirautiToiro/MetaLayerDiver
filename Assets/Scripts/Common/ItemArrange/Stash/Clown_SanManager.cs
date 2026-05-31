@@ -143,10 +143,7 @@ public class Clown_SanManager : MonoBehaviour, IShopManager, IButtonWithHighligh
                         }
 
                         //•¡»‚³‚ê‚½ƒJ[ƒh‚ÍŠù‚É—¿‹à‚ğ•¥‚Á‚Ä‚¢‚é‚Ì‚Å–³—¿‚Åó‚¯æ‚ç‚ê‚é
-                        var cost0PriceRate = new ShopPriceRate();
-                        cost0PriceRate.CommonRate = 0;
-                        cost0PriceRate.RareRate = 0;
-                        cost0PriceRate.MetaRate = 0;
+                        var cost0PriceRate = new ShopPriceRate(0,0,0);
 
                         returnHolder.Init(duplicatedCards, cardArrangeManager, this, cost0PriceRate);
                     }

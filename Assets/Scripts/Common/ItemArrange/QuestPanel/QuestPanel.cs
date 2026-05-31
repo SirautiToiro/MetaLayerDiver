@@ -75,7 +75,8 @@ public class QuestPanel : MonoBehaviour, IUIPage
         //クエストを実体化
         foreach (var ql in activeQuests)
         {
-            if (ql.QuestLine.QuestList[ql.Progress] is BranchQuest)
+            if (ql.QuestLine.QuestList[ql.Progress] is BranchQuest||
+                ql.QuestLine.QuestList[ql.Progress] is SystemCuest)
             {
                 continue;
             }
@@ -105,7 +106,7 @@ public class QuestPanel : MonoBehaviour, IUIPage
     public void OpenRequestPanel()
     {
         IQuest targetQuest = questTiles[selectedQuestIndex].GetQuest();
-        if (targetQuest is BranchQuest) return;//本来は入らないはず
+        if (targetQuest is BranchQuest || targetQuest is SystemCuest) return;//本来は入らないはず
 
         QuestRequest questRequest = targetQuest.GetQuestRequest();
         if(!(questRequest.requestType==QuestRequest.RequestType.CollectCards||
@@ -163,7 +164,7 @@ public class QuestPanel : MonoBehaviour, IUIPage
     private void OpenRewardPanel()
     {
         IQuest targetQuest = questTiles[selectedQuestIndex].GetQuest();
-        if (targetQuest is BranchQuest) return;//本来は入らないはず
+        if (targetQuest is BranchQuest || targetQuest is SystemCuest) return;//本来は入らないはず
 
         //this.canvas.enabled = false;//自身を見えなくする
 
@@ -227,7 +228,8 @@ public class QuestPanel : MonoBehaviour, IUIPage
             //新しいクエストを有効化
             var newQuest = QuestLineData.ActivateQuest(bQuest.GetNextQuestLine());
             //追加
-            if (newQuest.QuestLine.QuestList[newQuest.Progress] is BranchQuest)
+            if (newQuest.QuestLine.QuestList[newQuest.Progress] is BranchQuest||
+                newQuest.QuestLine.QuestList[newQuest.Progress] is SystemCuest)
             {//本来起こらないはず。
                 
             }
@@ -242,6 +244,20 @@ public class QuestPanel : MonoBehaviour, IUIPage
                 EndQuestReward();
                 return;
             }
+        }else if(questTiles[selectedQuestIndex].GetQuest() is SystemCuest sQuest)
+        {
+            //システムクエストの処理
+            switch (sQuest.systemQuestType)
+            {
+                case SystemCuest.SystemQuestType.UnlockDungeon:
+                    //ダンジョンアンロックの処理
+                    SettingManager.IsCanEnterDungeon = true;
+                    break;
+            }
+
+            //BranchQuest,SystemQuestが連続する場合のため、再度自身を呼び出す
+            EndQuestReward();
+            return;
         }
 
         //残っているクエストのStatusをクエスト開始時の状態に

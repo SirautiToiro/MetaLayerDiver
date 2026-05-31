@@ -172,7 +172,7 @@ MonoBehaviour:
   testEquippingPhysicalWeapons:
   - {fileID: 11400000, guid: ba3fee6805b7c294a9425809d00508be, type: 2}
   - {fileID: 11400000, guid: baa2ff746f014ba45a96fba7384c87c4, type: 2}
-  testEquippingGear: {fileID: 11400000, guid: 6950324e3de2f77479baa9ccb90d3263, type: 2}
+  testEquippingGear: {fileID: 11400000, guid: ade5aa20c560d394e8f3bc88dbbe8c81, type: 2}
   testEquippingConsumables:
   - {fileID: 0}
   - {fileID: 0}
@@ -488,6 +488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b7441387fc9d74ba41d66f1fc00669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useTestDataFlag: 0
+  useTestDataFlag: 1
   useTestQusetFlag: 0
   showAllCardFlag: 0
+  testMode: 1

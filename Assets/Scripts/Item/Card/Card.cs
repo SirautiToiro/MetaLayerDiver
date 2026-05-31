@@ -25,7 +25,7 @@ public class Card : ItemBase
     public List<AttributeDefine> actualAttributes;  //補正後のカード属性のリスト
     public int actualCost;//補正後のカードコスト
     public TargetDefine actualEffectTarget;//補正後の効果対象
-    public int serialNum;
+    public int serialNum { get; set; }
 
     //カードのステータス変動によって使用され、カードを使用すると消費されるPlayerの状態異常
     //(IState,int)のタプルになっていて、intには、使用後の減少量が入る

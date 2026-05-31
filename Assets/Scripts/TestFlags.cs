@@ -21,4 +21,6 @@ public class TestFlags : SingletonMonoBehaviour<TestFlags>
     public bool useTestQusetFlag;//テスト用クエストを使用するかのフラグ
 
     public bool showAllCardFlag;//全てのカードを表示するフラグ
+
+    public bool testMode;//テストモードかどうかのフラグ。これがtrueのときは、ゲーム内の特定の場所でテスト用の処理が走る。
 }

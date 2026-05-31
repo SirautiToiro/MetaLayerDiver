@@ -341,7 +341,6 @@ public class CardArrangeManager : MonoBehaviour, IItemManager
         {//村なら
             if (uiPageManager.GetTopPage() is InventoryAndShopUIPage)
             {//店を開いているなら
-                if (stashPanel.GetCurrentShopManager() is null) return;
 
                 if(holder is InventoryDeckCardsHolder||
                     holder is InventoryBackpackCardsHolder)
@@ -367,7 +366,7 @@ public class CardArrangeManager : MonoBehaviour, IItemManager
                         QuickMove((Card)item, holder,targetHolder, zone);
                     }
                 }
-                else if (holder is ShopCardHolder || holder is RequireCardHolder)
+                else if (holder is ShopCardHolder || holder is RequireCardHolder||holder is SellCardHolder)
                 {//店の場所,カード要求場所ならバックパックへ
                     QuickMove((Card)item, holder,inventoryBackpackCardsHolder, zone);
                 }

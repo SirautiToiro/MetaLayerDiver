@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 public class VillageManager : MonoBehaviour,IBaseUIPage
 {
@@ -25,18 +26,41 @@ public class VillageManager : MonoBehaviour,IBaseUIPage
 
     [SerializeField] private AudioClip villageBGM;
 
+    [SerializeField] private Button dungeonButton;
+
+    [SerializeField] private Image dungeonButtonSeal;
+
     void Start()
     {
         //BGM再生
         GameManager.SetAudio(villageBGM);
 
+        Init();
+
+        villageShopData.SetShopData();
+    }
+
+    /// <summary>
+    /// 初期化処理。村に入るとき、村のほか画面からの遷移に呼び出す
+    /// </summary>
+    public void Init()
+    {
         villageMainCanvas.enabled = true;
         pubCanvas.enabled = false;
         marketCanvas.enabled = false;
 
-        itemArrangeManager.Init(this,mainCamera);
+        itemArrangeManager.Init(this, mainCamera);
 
-        villageShopData.SetShopData();
+        if (!SettingManager.IsCanEnterDungeon&&!TestFlags.Instance.testMode)
+        {//ダンジョンに入れない
+            dungeonButton.interactable = false;
+            dungeonButtonSeal.enabled = true;
+        }
+        else
+        {
+            dungeonButton.interactable = true;
+            dungeonButtonSeal.enabled = false;
+        }
     }
 
     /// <summary>
@@ -88,6 +112,7 @@ public class VillageManager : MonoBehaviour,IBaseUIPage
         villageMainCanvas.enabled = true;
         pubCanvas.enabled = false;
         marketCanvas.enabled = false;
+        Init();
     }
 
     public void GoMarketButton()

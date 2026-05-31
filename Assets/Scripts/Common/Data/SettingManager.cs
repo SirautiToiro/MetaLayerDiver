@@ -8,6 +8,7 @@ using UnityEngine;
 /// </summary>
 public class SettingManager : SingletonMonoBehaviour<SettingManager>
 {
+    //////ユーザーから変更可能//////
     //コストが残っている時にその表示をするポップアップを表示するか
     public static bool IsShowCostRemainedPopup { get; set; }
 
@@ -21,6 +22,17 @@ public class SettingManager : SingletonMonoBehaviour<SettingManager>
 
     //クエスト終了時の報酬画面のポップアップを表示するか
     public static bool IsShowQuestRewardPopup { get; set; }
+
+    //////ENDユーザーから変更可能END//////
+
+    //////ユーザーから変更不能//////
+    
+    public static bool IsCanEnterDungeon { get; set; } = true;//ダンジョンに入れるかどうか。これがfalseのときは封印されている
+
+
+    //////ENDユーザーから変更不能END//////
+
+
 
     private void Awake()
     {
@@ -43,6 +55,7 @@ public class SettingManager : SingletonMonoBehaviour<SettingManager>
             IsShowCardDiscardPopup = data.IsShowCardDiscardPopup;
             IsShowEndBattlePopup = data.IsShowEndBattlePopup;
             IsShowQuestRewardPopup = data.IsShowQuestRewardPopup;
+            IsCanEnterDungeon = data.IsCanEnterDungeon;
         }
 
         if (TestFlags.Instance.useTestDataFlag)
@@ -52,6 +65,7 @@ public class SettingManager : SingletonMonoBehaviour<SettingManager>
             IsShowCardDiscardPopup = true;
             IsShowEndBattlePopup = true;
             IsShowQuestRewardPopup = true;
+            IsCanEnterDungeon = false;
         }
     }
 }

@@ -171,6 +171,9 @@ public class SaveDataManager : SingletonMonoBehaviour<SaveDataManager>
         public bool IsShowEndBattlePopup;
         //クエスト終了時の報酬画面のポップアップを表示するか
         public bool IsShowQuestRewardPopup;
+
+        //ダンジョンに入れるかどうか。これがfalseのときは封印されている
+        public bool IsCanEnterDungeon;
     }
 
     public void SaveInventoryData()
@@ -381,6 +384,7 @@ public class SaveDataManager : SingletonMonoBehaviour<SaveDataManager>
         saveData.IsShowCardDiscardPopup = SettingManager.IsShowCardDiscardPopup;
         saveData.IsShowEndBattlePopup = SettingManager.IsShowEndBattlePopup;
         saveData.IsShowQuestRewardPopup = SettingManager.IsShowQuestRewardPopup;
+        saveData.IsCanEnterDungeon = SettingManager.IsCanEnterDungeon;
 
         string json = JsonUtility.ToJson(saveData);
         File.WriteAllText(path, json);
